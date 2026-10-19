@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:podcast="https://podcastindex.org/namespace/1.0">
 <channel>
-<atom:link href="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/feed.xml" rel="self" type="application/rss+xml"/>
+<atom:link href="https://fisher521.github.io/daily-signal-feed/feed.xml" rel="self" type="application/rss+xml"/>
 <title>The Daily Signal</title>
-<link>https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/feed.xml</link>
+<link>https://fisher521.github.io/daily-signal-feed/feed.xml</link>
 <language>en</language>
 <description>A private daily briefing for Fisher: two hosts walk through the day's picks on AI, growth and building products, in plain English with short Chinese recaps. Private feed, not listed in any directory.</description>
 <lastBuildDate>Mon, 19 Oct 2026 16:21:12 +0800</lastBuildDate>
@@ -11,8 +11,8 @@
 <itunes:subtitle>Your daily download on AI, growth, and building things.</itunes:subtitle>
 <itunes:summary>A private daily briefing for Fisher: two hosts walk through the day's picks on AI, growth and building products, in plain English with short Chinese recaps. Private feed, not listed in any directory.</itunes:summary>
 <itunes:owner><itunes:name>Fisher</itunes:name><itunes:email>hawking520@gmail.com</itunes:email></itunes:owner>
-<itunes:image href="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/cover.jpg"/>
-<image><url>https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/cover.jpg</url><title>The Daily Signal</title><link>https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/feed.xml</link></image>
+<itunes:image href="https://fisher521.github.io/daily-signal-feed/cover.jpg"/>
+<image><url>https://fisher521.github.io/daily-signal-feed/cover.jpg</url><title>The Daily Signal</title><link>https://fisher521.github.io/daily-signal-feed/feed.xml</link></image>
 <itunes:category text="Technology"/>
 <itunes:explicit>false</itunes:explicit>
 <itunes:type>episodic</itunes:type>
@@ -75,13 +75,13 @@ Trending:
 - ③ 中文：vikingmute 让 Grok Bot 全权接管 SEO，「上线了和我说一声就好」
 - ③ 中文：「开屏摇一摇背后都压着一条广告收入 KPI」
 - ① (borderline) Anthropic 拿出 5% 股份成立公益基金</itunes:summary>
-<enclosure url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/episodes/daily-signal-2026-10-19.mp3" length="22474118" type="audio/mpeg"/>
+<enclosure url="https://fisher521.github.io/daily-signal-feed/episodes/daily-signal-2026-10-19.mp3" length="22474118" type="audio/mpeg"/>
 <itunes:duration>0:55:45</itunes:duration>
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
-<podcast:transcript url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-19.vtt" type="text/vtt" language="en" rel="captions"/>
-<podcast:transcript url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-19.srt" type="application/x-subrip" language="en" rel="captions"/>
-<podcast:chapters url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-19.chapters.json" type="application/json+chapters"/>
+<podcast:transcript url="https://fisher521.github.io/daily-signal-feed/tx/daily-signal-2026-10-19.vtt" type="text/vtt" language="en" rel="captions"/>
+<podcast:transcript url="https://fisher521.github.io/daily-signal-feed/tx/daily-signal-2026-10-19.srt" type="application/x-subrip" language="en" rel="captions"/>
+<podcast:chapters url="https://fisher521.github.io/daily-signal-feed/tx/daily-signal-2026-10-19.chapters.json" type="application/json+chapters"/>
 </item>
 <item>
 <title>The Daily Signal - Oct 18, 2026</title>
@@ -140,13 +140,13 @@ Trending:
 - ③ 中文：产品人给创作者平台 Tutti v2 打 70 分，缺的 30 分在哪
 - ① 中文：OpenCode 安全事件，部分用户存在里面的第三方密钥可能泄露
 - ① (borderline) 「AI 赋能」作为加到现有服务里的一项</itunes:summary>
-<enclosure url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/episodes/daily-signal-2026-10-18.mp3" length="20832563" type="audio/mpeg"/>
+<enclosure url="https://fisher521.github.io/daily-signal-feed/episodes/daily-signal-2026-10-18.mp3" length="20832563" type="audio/mpeg"/>
 <itunes:duration>0:51:37</itunes:duration>
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
-<podcast:transcript url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-18.vtt" type="text/vtt" language="en" rel="captions"/>
-<podcast:transcript url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-18.srt" type="application/x-subrip" language="en" rel="captions"/>
-<podcast:chapters url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-18.chapters.json" type="application/json+chapters"/>
+<podcast:transcript url="https://fisher521.github.io/daily-signal-feed/tx/daily-signal-2026-10-18.vtt" type="text/vtt" language="en" rel="captions"/>
+<podcast:transcript url="https://fisher521.github.io/daily-signal-feed/tx/daily-signal-2026-10-18.srt" type="application/x-subrip" language="en" rel="captions"/>
+<podcast:chapters url="https://fisher521.github.io/daily-signal-feed/tx/daily-signal-2026-10-18.chapters.json" type="application/json+chapters"/>
 </item>
 <item>
 <title>The Daily Signal - Oct 17, 2026</title>
@@ -205,13 +205,13 @@ Trending:
 - ③ 中文：Claude Code 老把口水话直接写进网页，怎么约束？
 - ① Claude 写了 Claude Code 约九成的代码；Code Review 是关键
 - ① (borderline) X 广告新规：难看、刺耳、夸大的广告会被禁投</itunes:summary>
-<enclosure url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/episodes/daily-signal-2026-10-17.mp3" length="17889691" type="audio/mpeg"/>
+<enclosure url="https://fisher521.github.io/daily-signal-feed/episodes/daily-signal-2026-10-17.mp3" length="17889691" type="audio/mpeg"/>
 <itunes:duration>0:43:11</itunes:duration>
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
-<podcast:transcript url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-17.vtt" type="text/vtt" language="en" rel="captions"/>
-<podcast:transcript url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-17.srt" type="application/x-subrip" language="en" rel="captions"/>
-<podcast:chapters url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-17.chapters.json" type="application/json+chapters"/>
+<podcast:transcript url="https://fisher521.github.io/daily-signal-feed/tx/daily-signal-2026-10-17.vtt" type="text/vtt" language="en" rel="captions"/>
+<podcast:transcript url="https://fisher521.github.io/daily-signal-feed/tx/daily-signal-2026-10-17.srt" type="application/x-subrip" language="en" rel="captions"/>
+<podcast:chapters url="https://fisher521.github.io/daily-signal-feed/tx/daily-signal-2026-10-17.chapters.json" type="application/json+chapters"/>
 </item>
 <item>
 <title>The Daily Signal - Oct 16, 2026</title>
@@ -270,13 +270,13 @@ Trending:
 - ① Claude Code Review 正式开放；Opus 5.5 快速模式取消排队但更贵
 - ① (borderline) 卖数据给 AI 公司：Labs 买的是工作流，不是文件
 - (borderline) 「我的 Bot 一周自己赚了钱」：模板免费送</itunes:summary>
-<enclosure url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/episodes/daily-signal-2026-10-16.mp3" length="9704639" type="audio/mpeg"/>
+<enclosure url="https://fisher521.github.io/daily-signal-feed/episodes/daily-signal-2026-10-16.mp3" length="9704639" type="audio/mpeg"/>
 <itunes:duration>0:20:56</itunes:duration>
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
-<podcast:transcript url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-16.vtt" type="text/vtt" language="en" rel="captions"/>
-<podcast:transcript url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-16.srt" type="application/x-subrip" language="en" rel="captions"/>
-<podcast:chapters url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-16.chapters.json" type="application/json+chapters"/>
+<podcast:transcript url="https://fisher521.github.io/daily-signal-feed/tx/daily-signal-2026-10-16.vtt" type="text/vtt" language="en" rel="captions"/>
+<podcast:transcript url="https://fisher521.github.io/daily-signal-feed/tx/daily-signal-2026-10-16.srt" type="application/x-subrip" language="en" rel="captions"/>
+<podcast:chapters url="https://fisher521.github.io/daily-signal-feed/tx/daily-signal-2026-10-16.chapters.json" type="application/json+chapters"/>
 </item>
 </channel>
 </rss>
