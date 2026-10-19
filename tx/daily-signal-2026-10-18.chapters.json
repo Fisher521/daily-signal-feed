@@ -1,0 +1,108 @@
+{
+ "version": "1.2.0",
+ "chapters": [
+  {
+   "startTime": 0.0,
+   "title": "Cold open",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-18/00.jpg"
+  },
+  {
+   "startTime": 52.7,
+   "title": "Intro",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-18/01.jpg"
+  },
+  {
+   "startTime": 240.4,
+   "title": "Segment 1 — Top stories: GEO, AI search accuracy, and the agent web",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-18/02.jpg",
+   "url": "https://x.com/heynavtoor/status/2111547839092551967"
+  },
+  {
+   "startTime": 490.41,
+   "title": "①② Peter Yang：软件是死了，还是主要不再给人用了",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-18/03.jpg",
+   "url": "https://x.com/petergyang/status/2111474264658624969"
+  },
+  {
+   "startTime": 685.96,
+   "title": "③ 「Agent 化」之后谁赢谁输：比价站、OTA、内容引流站被点名",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-18/04.jpg",
+   "url": "https://x.com/jspujji/status/2111527200725848563"
+  },
+  {
+   "startTime": 891.7,
+   "title": "Segment 2 — AI workflows, bottlenecks, and human-in-the-loop rules",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-18/05.jpg",
+   "url": "https://x.com/fchollet/status/2111507711653564543"
+  },
+  {
+   "startTime": 1121.21,
+   "title": "①②③ Eric Siu：他的外联 Bot 每天都在干活，但从没自己发过一封邮件",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-18/06.jpg",
+   "url": "https://x.com/ericosiu/status/2111547807190426112"
+  },
+  {
+   "startTime": 1298.52,
+   "title": "①③ Agent 之间用邮件沟通：报税 20 分钟办完",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-18/07.jpg",
+   "url": "https://x.com/thsottiaux/status/2111495392559067199"
+  },
+  {
+   "startTime": 1467.2,
+   "title": "③ 「出错后加的那条规矩，回答的是下一个问题，还是上一个？」",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-18/08.jpg",
+   "url": "https://x.com/mvrckhckr/status/2111481415627894822"
+  },
+  {
+   "startTime": 1622.08,
+   "title": "Break",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-18/09.jpg"
+  },
+  {
+   "startTime": 1658.03,
+   "title": "Segment 3 — Growth teardowns, writing rules, and quick hits",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-18/10.jpg",
+   "url": "https://x.com/alice_ercolani/status/2111472340207055125"
+  },
+  {
+   "startTime": 1888.85,
+   "title": "①③ 一个讲透的案例，十个月带来多笔六位数的单子",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-18/11.jpg",
+   "url": "https://x.com/marcelkargul/status/2111521400666091981"
+  },
+  {
+   "startTime": 2042.25,
+   "title": "①③ 让 Claude 写得更像人的 7 条规矩",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-18/12.jpg",
+   "url": "https://x.com/EXM7777/status/2111517853962977662"
+  },
+  {
+   "startTime": 2199.86,
+   "title": "③ 中文：产品人给创作者平台 Tutti v2 打 70 分，缺的 30 分在哪",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-18/13.jpg",
+   "url": "https://x.com/sujingshen/status/2111492937901367524"
+  },
+  {
+   "startTime": 2343.49,
+   "title": "① 中文：OpenCode 安全事件，部分用户存在里面的第三方密钥可能泄露",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-18/14.jpg",
+   "url": "https://x.com/dotey/status/2111553994867028409"
+  },
+  {
+   "startTime": 2452.67,
+   "title": "① (borderline) 「AI 赋能」作为加到现有服务里的一项",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-18/15.jpg",
+   "url": "https://x.com/lukepierceops/status/2111512018691690970"
+  },
+  {
+   "startTime": 2524.34,
+   "title": "Segment 4 — What Fisher could post and reply today",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-18/16.jpg"
+  },
+  {
+   "startTime": 3066.29,
+   "title": "Sign-off",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-18/17.jpg"
+  }
+ ]
+}

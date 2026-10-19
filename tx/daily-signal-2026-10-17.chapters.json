@@ -1,0 +1,108 @@
+{
+ "version": "1.2.0",
+ "chapters": [
+  {
+   "startTime": 0.0,
+   "title": "Cold open",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-17/00.jpg"
+  },
+  {
+   "startTime": 48.15,
+   "title": "Intro",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-17/01.jpg"
+  },
+  {
+   "startTime": 167.04,
+   "title": "Segment 1 — Top stories: agent architecture and communication",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-17/02.jpg",
+   "url": "https://x.com/rryssf/status/2111187391910391818"
+  },
+  {
+   "startTime": 517.42,
+   "title": "①②③ Matt Pocock：2027 年最值钱的 AI 技能是「说清楚你要什么」",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-17/03.jpg",
+   "url": "https://x.com/nateherk/status/2111187305062871080"
+  },
+  {
+   "startTime": 698.79,
+   "title": "③ Ben Tossell 花一整天搭…",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-17/04.jpg",
+   "url": "https://x.com/bentossell/status/2111198478336770442"
+  },
+  {
+   "startTime": 833.66,
+   "title": "③ 中文：Claude Code 老把口水话直接写进网页，怎么约束？",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-17/05.jpg",
+   "url": "https://x.com/yucheng/status/2111129793991184580"
+  },
+  {
+   "startTime": 966.16,
+   "title": "Segment 2 — Growth, conversion, and brand",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-17/06.jpg",
+   "url": "https://x.com/marcelkargul/status/2111138126282289309"
+  },
+  {
+   "startTime": 1114.92,
+   "title": "①②③ levelsio：结账页加一个「不想加入？告诉我为什么」",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-17/07.jpg",
+   "url": "https://x.com/levelsio/status/2111152778517295486"
+  },
+  {
+   "startTime": 1282.78,
+   "title": "③ 「被认出来不值钱，改变对方的判断才值钱」",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-17/08.jpg",
+   "url": "https://x.com/mvrckhckr/status/2111133366754091093"
+  },
+  {
+   "startTime": 1382.4,
+   "title": "Break",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-17/09.jpg"
+  },
+  {
+   "startTime": 1409.73,
+   "title": "Segment 3 — AI agents as users, search, and quick hits",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-17/10.jpg",
+   "url": "https://x.com/gregisenberg/status/2111176488162582933"
+  },
+  {
+   "startTime": 1574.74,
+   "title": "①② Eric Siu：新线索 60 秒内打回去，交给 Bot 做",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-17/11.jpg",
+   "url": "https://x.com/ericosiu/status/2111183396500332855"
+  },
+  {
+   "startTime": 1729.56,
+   "title": "①③ Lily Ray：带连字符的品牌名在 AI Overview 标题里被截断",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-17/12.jpg",
+   "url": "https://x.com/lilyraynyc/status/2111147245974298669"
+  },
+  {
+   "startTime": 1869.21,
+   "title": "③ Allie K. Miller：用了 Instinct 后，她的 Google…",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-17/13.jpg",
+   "url": "https://x.com/alliekmiller/status/2111135437922169070"
+  },
+  {
+   "startTime": 1984.95,
+   "title": "① Claude 写了 Claude Code 约九成的代码；Code Review…",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-17/14.jpg",
+   "url": "https://x.com/ClaudeDevs/status/2111168901723906176"
+  },
+  {
+   "startTime": 2106.06,
+   "title": "① (borderline) X 广告新规：难看、刺耳、夸大的广告会被禁投",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-17/15.jpg",
+   "url": "https://x.com/elonmusk/status/2111131160348688395"
+  },
+  {
+   "startTime": 2163.12,
+   "title": "Segment 4 — What Fisher could post and reply today",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-17/16.jpg"
+  },
+  {
+   "startTime": 2549.51,
+   "title": "Sign-off",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-17/17.jpg"
+  }
+ ]
+}

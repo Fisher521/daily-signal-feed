@@ -1,0 +1,108 @@
+{
+ "version": "1.2.0",
+ "chapters": [
+  {
+   "startTime": 0.0,
+   "title": "Cold open",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-19/00.jpg"
+  },
+  {
+   "startTime": 61.97,
+   "title": "Intro",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-19/01.jpg"
+  },
+  {
+   "startTime": 251.47,
+   "title": "Segment 1 — Top stories: The AI agent war, structured feeds, and model styles",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-19/02.jpg",
+   "url": "https://x.com/gregisenberg/status/2111903028202852760"
+  },
+  {
+   "startTime": 542.92,
+   "title": "①③ AI 搜索里卖货：电商的商品 feed 最好用；GPT-6…",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-19/03.jpg",
+   "url": "https://x.com/brodieseo/status/2111937423576080594"
+  },
+  {
+   "startTime": 739.53,
+   "title": "①② AI 做出来的东西为什么都长一个样：Stripe 设计负责人的提醒 +…",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-19/04.jpg",
+   "url": "https://x.com/shao__meng/status/2111807244971213155"
+  },
+  {
+   "startTime": 1003.23,
+   "title": "Segment 2 — AI workflows: Handoff templates, review rules, and real-task testing",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-19/05.jpg",
+   "url": "https://x.com/ericosiu/status/2111834752760058281"
+  },
+  {
+   "startTime": 1220.74,
+   "title": "①③ Claude Code 团队怎么审 AI 写的代码：同样的意见说两次，就写进规则",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-19/06.jpg",
+   "url": "https://x.com/PrajwalTomar_/status/2111797449597841521"
+  },
+  {
+   "startTime": 1439.37,
+   "title": "①②③ 新模型值不值得换：拿你自己的活去试，找 3 到 5 处明显更好的地方",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-19/07.jpg",
+   "url": "https://x.com/EXM7777/status/2111926293277323449"
+  },
+  {
+   "startTime": 1626.82,
+   "title": "③ 中文：vikingmute 让 Grok Bot 全权接管…",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-19/08.jpg",
+   "url": "https://x.com/vikingmute/status/2111814559942197535"
+  },
+  {
+   "startTime": 1792.08,
+   "title": "Break",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-19/09.jpg"
+  },
+  {
+   "startTime": 1836.89,
+   "title": "Segment 3 — Growth mindset, AI media, and quick hits",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-19/10.jpg",
+   "url": "https://x.com/petergyang/status/2111833052351696937"
+  },
+  {
+   "startTime": 2012.65,
+   "title": "① 一句话让 AI 剪完一条视频：Riley Brown 列了 15 步",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-19/11.jpg",
+   "url": "https://x.com/rileybrown/status/2111925755215040779"
+  },
+  {
+   "startTime": 2190.21,
+   "title": "②③ 借别的行业已经想清楚的办法，比在自己行业里死磕效果更好",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-19/12.jpg",
+   "url": "https://x.com/muratcan/status/2111941847140782177"
+  },
+  {
+   "startTime": 2331.86,
+   "title": "③ staysaasy：人人都看到 50 个能翻 1000 倍的机会，却没人乐观",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-19/13.jpg",
+   "url": "https://x.com/staysaasy/status/2111860647986131013"
+  },
+  {
+   "startTime": 2489.22,
+   "title": "③ 中文：「开屏摇一摇背后都压着一条广告收入 KPI」",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-19/14.jpg",
+   "url": "https://x.com/sujingshen/status/2111867122297249993"
+  },
+  {
+   "startTime": 2605.49,
+   "title": "① (borderline) Anthropic 拿出 5% 股份成立公益基金",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-19/15.jpg",
+   "url": "https://x.com/AnthropicAI/status/2111881963657412903"
+  },
+  {
+   "startTime": 2696.83,
+   "title": "Segment 4 — What Fisher could post and reply today",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-19/16.jpg"
+  },
+  {
+   "startTime": 3303.42,
+   "title": "Sign-off",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-19/17.jpg"
+  }
+ ]
+}

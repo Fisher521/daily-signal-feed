@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+<channel>
+<atom:link href="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/feed.xml" rel="self" type="application/rss+xml"/>
+<title>The Daily Signal</title>
+<link>https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/feed.xml</link>
+<language>en</language>
+<description>A private daily briefing for Fisher: two hosts walk through the day's picks on AI, growth and building products, in plain English with short Chinese recaps. Private feed, not listed in any directory.</description>
+<lastBuildDate>Mon, 19 Oct 2026 16:21:12 +0800</lastBuildDate>
+<itunes:author>The Daily Signal</itunes:author>
+<itunes:subtitle>Your daily download on AI, growth, and building things.</itunes:subtitle>
+<itunes:summary>A private daily briefing for Fisher: two hosts walk through the day's picks on AI, growth and building products, in plain English with short Chinese recaps. Private feed, not listed in any directory.</itunes:summary>
+<itunes:owner><itunes:name>Fisher</itunes:name><itunes:email>hawking520@gmail.com</itunes:email></itunes:owner>
+<itunes:image href="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/cover.jpg"/>
+<image><url>https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/cover.jpg</url><title>The Daily Signal</title><link>https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/feed.xml</link></image>
+<itunes:category text="Technology"/>
+<itunes:explicit>false</itunes:explicit>
+<itunes:type>episodic</itunes:type>
+<itunes:block>Yes</itunes:block>
+<itunes:complete>No</itunes:complete>
+<item>
+<title>The Daily Signal - Oct 19, 2026</title>
+<guid isPermaLink="false">daily-signal-2026-10-19</guid>
+<pubDate>Mon, 19 Oct 2026 07:30:00 +0800</pubDate>
+<description>要点：今天的待办：发帖和回复前先确认两件事——第一，原创帖第一句“一些大公司开始拦 Agent”来自 Greg 的帖子且未核实，介意的话就改成“如果大公司开始拦 Agent”；第二，回第 4 条中文帖时，确认你对“改线上页面”确实留了真人把关这一步，没有的话就删掉那句，只讲写稿助手的规矩。确认好之后，再由你自己动手发送。
+
+Chapters:
+0:00 Cold open
+1:01 Intro
+4:11 Segment 1 — Top stories: The AI agent war, structured feeds, and model styles
+16:43 Segment 2 — AI workflows: Handoff templates, review rules, and real-task testing
+29:52 Break
+30:36 Segment 3 — Growth mindset, AI media, and quick hits
+44:56 Segment 4 — What Fisher could post and reply today
+55:03 Sign-off
+
+Trending:
+- ①②③ Greg Isenberg：Delta、Chase、Amazon 开始拦 AI Agent，「Agent 之战」会怎么走
+- ①② AI 做出来的东西为什么都长一个样：Stripe 设计负责人的提醒 + 一份「模型风格」研究
+- ①②③ Eric Siu 把 5 个 Bot 做成模板公开：每个都写明「Bot 停在哪、人从哪接手」
+- ①③ Claude Code 团队怎么审 AI 写的代码：同样的意见说两次，就写进规则
+- ①②③ 新模型值不值得换：拿你自己的活去试，找 3 到 5 处明显更好的地方
+- ①③ AI 搜索里卖货：电商的商品 feed 最好用；GPT-6 开始在推荐里加「怎么选供应商」的提示
+- ③ Peter Yang：X 上的回复机器人变多了；他的新一期播客讲「招大厂简历的人像车祸」
+- ① 一句话让 AI 剪完一条视频：Riley Brown 列了 15 步
+- ②③ 借别的行业已经想清楚的办法，比在自己行业里死磕效果更好
+- ③ staysaasy：人人都看到 50 个能翻 1000 倍的机会，却没人乐观
+- ③ 中文：vikingmute 让 Grok Bot 全权接管 SEO，「上线了和我说一声就好」
+- ③ 中文：「开屏摇一摇背后都压着一条广告收入 KPI」
+- ① (borderline) Anthropic 拿出 5% 股份成立公益基金</description>
+<content:encoded><![CDATA[<p><b>要点：</b>今天的待办：发帖和回复前先确认两件事——第一，原创帖第一句“一些大公司开始拦 Agent”来自 Greg 的帖子且未核实，介意的话就改成“如果大公司开始拦 Agent”；第二，回第 4 条中文帖时，确认你对“改线上页面”确实留了真人把关这一步，没有的话就删掉那句，只讲写稿助手的规矩。确认好之后，再由你自己动手发送。</p><p>Transcript (time-synced, VTT): <a href="/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-19.vtt">open</a></p><p><b>Chapters</b><br>0:00 Cold open<br>1:01 Intro<br>4:11 Segment 1 — Top stories: The AI agent war, structured feeds, and model styles<br>16:43 Segment 2 — AI workflows: Handoff templates, review rules, and real-task testing<br>29:52 Break<br>30:36 Segment 3 — Growth mindset, AI media, and quick hits<br>44:56 Segment 4 — What Fisher could post and reply today<br>55:03 Sign-off</p><p><b>Trending</b></p><ul><li><a href="https://x.com/gregisenberg/status/2111903028202852760">①②③ Greg Isenberg：Delta、Chase、Amazon 开始拦 AI Agent，「Agent 之战」会怎么走</a> — 你做 GEO 的出发点就是「先让机器读得懂」。他的第 7、8 步说的正是你在做的事，而且会越来越挤。</li><li><a href="https://x.com/shao__meng/status/2111807244971213155">①② AI 做出来的东西为什么都长一个样：Stripe 设计负责人的提醒 + 一份「模型风格」研究</a> — 你给文案定过「不要 AI 腔」的规矩，这是同一个问题放在页面设计上：用户一眼看出是哪个模型做的，就很难信它。</li><li><a href="https://x.com/ericosiu/status/2111834752760058281">①②③ Eric Siu 把 5 个 Bot 做成模板公开：每个都写明「Bot 停在哪、人从哪接手」</a> — 和你团队的「只写草稿、你自己发」是同一种做法，而且他把交接点写进了每个模板。你的规矩也可以这样写成一张表。</li><li><a href="https://x.com/PrajwalTomar_/status/2111797449597841521">①③ Claude Code 团队怎么审 AI 写的代码：同样的意见说两次，就写进规则</a> — 跟代码无关的部分对你最有用：「同样的意见说两次就写进规则」和「花钱、对外的事永远人批准」，正是你给助手定 rules/ 的方式。</li><li><a href="https://x.com/EXM7777/status/2111926293277323449">①②③ 新模型值不值得换：拿你自己的活去试，找 3 到 5 处明显更好的地方</a> — 这几乎就是你素材库里那条选题的答案。你团队按任务分模型（Argon 写稿、Grok 读 X）也是这么定出来的。</li><li><a href="https://x.com/brodieseo/status/2111937423576080594">①③ AI 搜索里卖货：电商的商品 feed 最好用；GPT-6 开始在推荐里加「怎么选供应商」的提示</a> — 跟你做 GEO 的方向一致：结构清楚、能核实的信息先被 AI 用上。旅游或 eSIM 这类有固定字段的产品也可以想想有没有类似 feed 的东西。</li><li><a href="https://x.com/petergyang/status/2111833052351696937">③ Peter Yang：X 上的回复机器人变多了；他的新一期播客讲「招大厂简历的人像车祸」</a> — 你的互动包靠回复涨影响力。机器人回复越多，像人写的、有具体观点的回复越显眼，也越容易被当成机器人，所以每条回复要有只有你说得出的细节。</li><li><a href="https://x.com/rileybrown/status/2111925755215040779">① 一句话让 AI 剪完一条视频：Riley Brown 列了 15 步</a> · <a href="https://x.com/rileybrown/status/2111925755215040779">▶ video</a> — 你的播客现在只出音频。如果以后想把 The Daily Signal 或文章做成短视频，这类流程已经有人在公开讲细节。</li><li><a href="https://x.com/muratcan/status/2111941847140782177">②③ 借别的行业已经想清楚的办法，比在自己行业里死磕效果更好</a> — 这就是你的角度：把增长十几年的老方法搬到 AI 产品上。小号（2 赞），回复容易被看到。</li><li><a href="https://x.com/staysaasy/status/2111860647986131013">③ staysaasy：人人都看到 50 个能翻 1000 倍的机会，却没人乐观</a> — 「大家都在做同样的事」正好说明：工具人人有，差别在你挑哪一件做深。适合你用增长人的视角回。</li><li><a href="https://x.com/vikingmute/status/2111814559942197535">③ 中文：vikingmute 让 Grok Bot 全权接管 SEO，「上线了和我说一声就好」</a> — 跟你「只写草稿、自己拍板」正好是两种做法，可以用中文聊聊各自的边界。你做 GEO/SEO，也可能用得上 GSC 数据自动整理。</li><li><a href="https://x.com/sujingshen/status/2111867122297249993">③ 中文：「开屏摇一摇背后都压着一条广告收入 KPI」</a> — 做增长的人最熟这种取舍。昨天日报里有他另一条（Tutti v2），今天这条更贴你的老本行。小号，回复容易被看到。</li><li><a href="https://x.com/AnthropicAI/status/2111881963657412903">① (borderline) Anthropic 拿出 5% 股份成立公益基金 <i>(borderline)</i></a> — 跟你的内容方向关系不大，只是这两天的大新闻，聊天时可能被问到，所以列为擦边。</li></ul><p>Private feed for Fisher. Nothing in this episode was posted or sent; replies mentioned are drafts.</p>]]></content:encoded>
+<itunes:summary>要点：今天的待办：发帖和回复前先确认两件事——第一，原创帖第一句“一些大公司开始拦 Agent”来自 Greg 的帖子且未核实，介意的话就改成“如果大公司开始拦 Agent”；第二，回第 4 条中文帖时，确认你对“改线上页面”确实留了真人把关这一步，没有的话就删掉那句，只讲写稿助手的规矩。确认好之后，再由你自己动手发送。
+
+Chapters:
+0:00 Cold open
+1:01 Intro
+4:11 Segment 1 — Top stories: The AI agent war, structured feeds, and model styles
+16:43 Segment 2 — AI workflows: Handoff templates, review rules, and real-task testing
+29:52 Break
+30:36 Segment 3 — Growth mindset, AI media, and quick hits
+44:56 Segment 4 — What Fisher could post and reply today
+55:03 Sign-off
+
+Trending:
+- ①②③ Greg Isenberg：Delta、Chase、Amazon 开始拦 AI Agent，「Agent 之战」会怎么走
+- ①② AI 做出来的东西为什么都长一个样：Stripe 设计负责人的提醒 + 一份「模型风格」研究
+- ①②③ Eric Siu 把 5 个 Bot 做成模板公开：每个都写明「Bot 停在哪、人从哪接手」
+- ①③ Claude Code 团队怎么审 AI 写的代码：同样的意见说两次，就写进规则
+- ①②③ 新模型值不值得换：拿你自己的活去试，找 3 到 5 处明显更好的地方
+- ①③ AI 搜索里卖货：电商的商品 feed 最好用；GPT-6 开始在推荐里加「怎么选供应商」的提示
+- ③ Peter Yang：X 上的回复机器人变多了；他的新一期播客讲「招大厂简历的人像车祸」
+- ① 一句话让 AI 剪完一条视频：Riley Brown 列了 15 步
+- ②③ 借别的行业已经想清楚的办法，比在自己行业里死磕效果更好
+- ③ staysaasy：人人都看到 50 个能翻 1000 倍的机会，却没人乐观
+- ③ 中文：vikingmute 让 Grok Bot 全权接管 SEO，「上线了和我说一声就好」
+- ③ 中文：「开屏摇一摇背后都压着一条广告收入 KPI」
+- ① (borderline) Anthropic 拿出 5% 股份成立公益基金</itunes:summary>
+<enclosure url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/episodes/daily-signal-2026-10-19.mp3" length="22474118" type="audio/mpeg"/>
+<itunes:duration>0:55:45</itunes:duration>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+<podcast:transcript url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-19.vtt" type="text/vtt" language="en" rel="captions"/>
+<podcast:transcript url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-19.srt" type="application/x-subrip" language="en" rel="captions"/>
+<podcast:chapters url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-19.chapters.json" type="application/json+chapters"/>
+</item>
+<item>
+<title>The Daily Signal - Oct 18, 2026</title>
+<guid isPermaLink="false">daily-signal-2026-10-18</guid>
+<pubDate>Sun, 18 Oct 2026 07:30:00 +0800</pubDate>
+<description>要点：今天的待办：发帖和回复前先确认三件事——第一，之前是不是确实没有任何助手替你对外发过消息；第二，回第 4 条时介不介意提“自己做小旅游站”；第三，回第 9 条时打不打算真去过一遍现有的规矩。确认好之后，再由你自己动手发送。
+
+Chapters:
+0:00 Cold open
+0:52 Intro
+4:00 Segment 1 — Top stories: GEO, AI search accuracy, and the agent web
+14:51 Segment 2 — AI workflows, bottlenecks, and human-in-the-loop rules
+27:02 Break
+27:38 Segment 3 — Growth teardowns, writing rules, and quick hits
+42:04 Segment 4 — What Fisher could post and reply today
+51:06 Sign-off
+
+Trending:
+- ①②③ 研究：Google AI Overview 里约九分之一的说法，它自己引用的来源撑不住
+- ①②③ François Chollet：代码几乎都是 Agent 写的，公司的利润却没怎么动
+- ①②③ Eric Siu：他的外联 Bot 每天都在干活，但从没自己发过一封邮件
+- ①③ 一个讲透的案例，十个月带来多笔六位数的单子
+- ①② Cal AI 拆解：先上付费墙，再让你注册
+- ①③ 让 Claude 写得更像人的 7 条规矩
+- ①② Peter Yang：软件是死了，还是主要不再给人用了
+- ③ 「Agent 化」之后谁赢谁输：比价站、OTA、内容引流站被点名
+- ③ 「出错后加的那条规矩，回答的是下一个问题，还是上一个？」
+- ①③ Agent 之间用邮件沟通：报税 20 分钟办完
+- ③ 中文：产品人给创作者平台 Tutti v2 打 70 分，缺的 30 分在哪
+- ① 中文：OpenCode 安全事件，部分用户存在里面的第三方密钥可能泄露
+- ① (borderline) 「AI 赋能」作为加到现有服务里的一项</description>
+<content:encoded><![CDATA[<p><b>要点：</b>今天的待办：发帖和回复前先确认三件事——第一，之前是不是确实没有任何助手替你对外发过消息；第二，回第 4 条时介不介意提“自己做小旅游站”；第三，回第 9 条时打不打算真去过一遍现有的规矩。确认好之后，再由你自己动手发送。</p><p>Transcript (time-synced, VTT): <a href="/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-18.vtt">open</a></p><p><b>Chapters</b><br>0:00 Cold open<br>0:52 Intro<br>4:00 Segment 1 — Top stories: GEO, AI search accuracy, and the agent web<br>14:51 Segment 2 — AI workflows, bottlenecks, and human-in-the-loop rules<br>27:02 Break<br>27:38 Segment 3 — Growth teardowns, writing rules, and quick hits<br>42:04 Segment 4 — What Fisher could post and reply today<br>51:06 Sign-off</p><p><b>Trending</b></p><ul><li><a href="https://x.com/heynavtoor/status/2111547839092551967">①②③ 研究：Google AI Overview 里约九分之一的说法，它自己引用的来源撑不住</a> — 做 GEO 的反面证据：AI 会引用你，但不一定照你写的说。页面上的关键事实写得越清楚、越好核对，被说错的机会越小。</li><li><a href="https://x.com/fchollet/status/2111507711653564543">①②③ François Chollet：代码几乎都是 Agent 写的，公司的利润却没怎么动</a> — 这就是增长的老道理：做内容、做页面变便宜了，瓶颈挪到了分发和信任上。你做增长十几年，讲「瓶颈挪到哪了」比讲工具更有说服力。</li><li><a href="https://x.com/ericosiu/status/2111547807190426112">①②③ Eric Siu：他的外联 Bot 每天都在干活，但从没自己发过一封邮件</a> — 跟你团队的硬规则一模一样：Bot 只写草稿，你自己发。外面有人把这条当卖点讲，说明「不给 Bot 发送键」是一个能拿出来说的做法，不是保守。</li><li><a href="https://x.com/marcelkargul/status/2111521400666091981">①③ 一个讲透的案例，十个月带来多笔六位数的单子</a> — 接着昨天第 3 条：你的 X 是给要找你的人看案例，不是追流量。你案例库里最该打磨的是一两个能让人记住、会被别人复述的案例。</li><li><a href="https://x.com/alice_ercolani/status/2111472340207055125">①② Cal AI 拆解：先上付费墙，再让你注册</a> — 都是你熟的老增长方法（降低门槛、找 aha 时刻、拉新激励），只是放在 AI 订阅产品里。「注册放到最后」这一条，正好对上你产品没人注册的那次复盘。</li><li><a href="https://x.com/EXM7777/status/2111517853962977662">①③ 让 Claude 写得更像人的 7 条规矩</a> — 你给文案定过「不要 AI 腔」的规则，团队现在也是 Argon 起草、再由另一个助手审改，和他第 7 条一样。</li><li><a href="https://x.com/petergyang/status/2111474264658624969">①② Peter Yang：软件是死了，还是主要不再给人用了</a> — 「Agent 成为主要用户」跟你做 GEO 的出发点一样：先让机器读得懂。那段提示词里的「先给我看再动手」也跟你的规矩一致。</li><li><a href="https://x.com/jspujji/status/2111527200725848563">③ 「Agent 化」之后谁赢谁输：比价站、OTA、内容引流站被点名</a> — 旅游内容站正好在他的「输家」那一列。你可以讲的是：能活下来的内容是 Agent 拿不到的一手核实信息。</li><li><a href="https://x.com/mvrckhckr/status/2111481415627894822">③ 「出错后加的那条规矩，回答的是下一个问题，还是上一个？」</a> — 你团队的 rules/ 和纠偏记录就是这么一条条加出来的，这个问题可以直接拿来检查自己的规矩。小号，回复容易被看到。</li><li><a href="https://x.com/thsottiaux/status/2111495392559067199">①③ Agent 之间用邮件沟通：报税 20 分钟办完</a> — 你的几个助手现在靠群文件和黑板工单沟通，外面有人在用邮件线程做同样的事。共同点是：每一步都有记录可查。</li><li><a href="https://x.com/sujingshen/status/2111492937901367524">③ 中文：产品人给创作者平台 Tutti v2 打 70 分，缺的 30 分在哪</a> — 「先预审、保留口吻」跟你给自己的内容流程一样。中文作者，可以用中文回。</li><li><a href="https://x.com/dotey/status/2111553994867028409">① 中文：OpenCode 安全事件，部分用户存在里面的第三方密钥可能泄露</a> — 如果你或团队在 OpenCode Console 里绑定过服务商，就查一下邮箱。没用过就跳过。</li><li><a href="https://x.com/lukepierceops/status/2111512018691690970">① (borderline) 「AI 赋能」作为加到现有服务里的一项 <i>(borderline)</i></a> — 只有你以后卖咨询服务时才用得上，所以列为擦边。</li></ul><p>Private feed for Fisher. Nothing in this episode was posted or sent; replies mentioned are drafts.</p>]]></content:encoded>
+<itunes:summary>要点：今天的待办：发帖和回复前先确认三件事——第一，之前是不是确实没有任何助手替你对外发过消息；第二，回第 4 条时介不介意提“自己做小旅游站”；第三，回第 9 条时打不打算真去过一遍现有的规矩。确认好之后，再由你自己动手发送。
+
+Chapters:
+0:00 Cold open
+0:52 Intro
+4:00 Segment 1 — Top stories: GEO, AI search accuracy, and the agent web
+14:51 Segment 2 — AI workflows, bottlenecks, and human-in-the-loop rules
+27:02 Break
+27:38 Segment 3 — Growth teardowns, writing rules, and quick hits
+42:04 Segment 4 — What Fisher could post and reply today
+51:06 Sign-off
+
+Trending:
+- ①②③ 研究：Google AI Overview 里约九分之一的说法，它自己引用的来源撑不住
+- ①②③ François Chollet：代码几乎都是 Agent 写的，公司的利润却没怎么动
+- ①②③ Eric Siu：他的外联 Bot 每天都在干活，但从没自己发过一封邮件
+- ①③ 一个讲透的案例，十个月带来多笔六位数的单子
+- ①② Cal AI 拆解：先上付费墙，再让你注册
+- ①③ 让 Claude 写得更像人的 7 条规矩
+- ①② Peter Yang：软件是死了，还是主要不再给人用了
+- ③ 「Agent 化」之后谁赢谁输：比价站、OTA、内容引流站被点名
+- ③ 「出错后加的那条规矩，回答的是下一个问题，还是上一个？」
+- ①③ Agent 之间用邮件沟通：报税 20 分钟办完
+- ③ 中文：产品人给创作者平台 Tutti v2 打 70 分，缺的 30 分在哪
+- ① 中文：OpenCode 安全事件，部分用户存在里面的第三方密钥可能泄露
+- ① (borderline) 「AI 赋能」作为加到现有服务里的一项</itunes:summary>
+<enclosure url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/episodes/daily-signal-2026-10-18.mp3" length="20832563" type="audio/mpeg"/>
+<itunes:duration>0:51:37</itunes:duration>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+<podcast:transcript url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-18.vtt" type="text/vtt" language="en" rel="captions"/>
+<podcast:transcript url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-18.srt" type="application/x-subrip" language="en" rel="captions"/>
+<podcast:chapters url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-18.chapters.json" type="application/json+chapters"/>
+</item>
+<item>
+<title>The Daily Signal - Oct 17, 2026</title>
+<guid isPermaLink="false">daily-signal-2026-10-17</guid>
+<pubDate>Sat, 17 Oct 2026 07:30:00 +0800</pubDate>
+<description>要点：今天的待办：先确认两件事——原创帖最后一句是不是符合真实感受、自己的页面标题里有没有连字符；然后发原创帖（注意别和第 9 条回复重复），再挑几条回复亲自发出去。
+
+Chapters:
+0:00 Cold open
+0:48 Intro
+2:47 Segment 1 — Top stories: agent architecture and communication
+16:06 Segment 2 — Growth, conversion, and brand
+23:02 Break
+23:29 Segment 3 — AI agents as users, search, and quick hits
+36:03 Segment 4 — What Fisher could post and reply today
+42:29 Sign-off
+
+Trending:
+- ①②③ Lee Robinson 讲「常驻 Agent」怎么搭：记忆分四层，先自己想办法，最后才问人
+- ①②③ Matt Pocock：2027 年最值钱的 AI 技能是「说清楚你要什么」
+- ①②③ 爆款不等于转化：4 千浏览的案例帖比 60 万浏览的帖带来更多客户
+- ①②③ levelsio：结账页加一个「不想加入？告诉我为什么」
+- ①② Greg Isenberg：Agent 要用的工具正在变成独立生意
+- ①② Eric Siu：新线索 60 秒内打回去，交给 Bot 做
+- ①③ Lily Ray：带连字符的品牌名在 AI Overview 标题里被截断
+- ③ Allie K. Miller：用了 Instinct 后，她的 Google 使用降了九成
+- ③ 「被认出来不值钱，改变对方的判断才值钱」
+- ③ Ben Tossell 花一整天搭 Agent：开线程、发邮件、更新共享任务表和工作日志
+- ③ 中文：Claude Code 老把口水话直接写进网页，怎么约束？
+- ① Claude 写了 Claude Code 约九成的代码；Code Review 是关键
+- ① (borderline) X 广告新规：难看、刺耳、夸大的广告会被禁投</description>
+<content:encoded><![CDATA[<p><b>要点：</b>今天的待办：先确认两件事——原创帖最后一句是不是符合真实感受、自己的页面标题里有没有连字符；然后发原创帖（注意别和第 9 条回复重复），再挑几条回复亲自发出去。</p><p>Transcript (time-synced, VTT): <a href="/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-17.vtt">open</a></p><p><b>Chapters</b><br>0:00 Cold open<br>0:48 Intro<br>2:47 Segment 1 — Top stories: agent architecture and communication<br>16:06 Segment 2 — Growth, conversion, and brand<br>23:02 Break<br>23:29 Segment 3 — AI agents as users, search, and quick hits<br>36:03 Segment 4 — What Fisher could post and reply today<br>42:29 Sign-off</p><p><b>Trending</b></p><ul><li><a href="https://x.com/rryssf/status/2111187391910391818">①②③ Lee Robinson 讲「常驻 Agent」怎么搭：记忆分四层，先自己想办法，最后才问人</a> — 你的三个助手团队跟这套结构几乎一一对应：memory.md 是核心事实，chat.md 是按日期的日志，state.json 的锁管谁在跑。讲座给了一个外部的、有名字的参照，说明你踩过的坑别人也在用同样的办法解决。</li><li><a href="https://x.com/nateherk/status/2111187305062871080">①②③ Matt Pocock：2027 年最值钱的 AI 技能是「说清楚你要什么」</a> — 你不写代码，这条正好是你的长处：带团队、写需求、写交接，本来就是「把要什么说清楚」。</li><li><a href="https://x.com/marcelkargul/status/2111138126282289309">①②③ 爆款不等于转化：4 千浏览的案例帖比 60 万浏览的帖带来更多客户</a> — 跟你的内容方向一致：你的 X 不是追流量，是让找你合作的人看到真实案例。收藏数比浏览数更接近「有人想用」。</li><li><a href="https://x.com/levelsio/status/2111152778517295486">①②③ levelsio：结账页加一个「不想加入？告诉我为什么」</a> — ① 是老派增长做法（问流失的人为什么走），现在独立开发者重新用起来，你最懂这个；③ 是提醒：你的互动包回复必须像人写的，有具体经历，不能是泛泛的夸奖。</li><li><a href="https://x.com/gregisenberg/status/2111176488162582933">①② Greg Isenberg：Agent 要用的工具正在变成独立生意</a> — 增长的意思在变：以后来用你产品的，可能是别人的 Agent。这和你做 GEO 的出发点一样：先让 AI 读得懂、敢引用。</li><li><a href="https://x.com/ericosiu/status/2111183396500332855">①② Eric Siu：新线索 60 秒内打回去，交给 Bot 做</a> — 你的 CRM 文章（DR-08《当老板自己用 AI 搭 CRM，增长人还能卖什么？》）v3 要补通用例子，这条就是一个现成的通用例子：线索响应速度以前靠销售纪律，现在老板自己配个 Bot 就能做。</li><li><a href="https://x.com/lilyraynyc/status/2111147245974298669">①③ Lily Ray：带连字符的品牌名在 AI Overview 标题里被截断</a> — 做 GEO 的小细节：页面标题和品牌名里有连字符的，要去看 AI 摘要里显示成什么样。</li><li><a href="https://x.com/alliekmiller/status/2111135437922169070">③ Allie K. Miller：用了 Instinct 后，她的 Google 使用降了九成</a> — 你做 GEO 和 SEO 两边都要顾，这条正好说明为什么不能只押一边。</li><li><a href="https://x.com/mvrckhckr/status/2111133366754091093">③ 「被认出来不值钱，改变对方的判断才值钱」</a> — 跟你做个人品牌的出发点一样：不是为了被认出来，是让人知道你能帮他做哪个判断。小号，回复容易被看到。</li><li><a href="https://x.com/bentossell/status/2111198478336770442">③ Ben Tossell 花一整天搭 Agent：开线程、发邮件、更新共享任务表和工作日志</a> — 跟你团队的做法很像（共享群日志、黑板工单、状态文件）。你可以讲的是「日志谁来写、写在哪」这种实际问题。</li><li><a href="https://x.com/yucheng/status/2111129793991184580">③ 中文：Claude Code 老把口水话直接写进网页，怎么约束？</a> — 和昨天第 3 条（点名你不想要的样式）是同一个问题。你给文案定过「不要 AI 腔」的具体规则，可以从写规则的角度回答，不涉及写代码。</li><li><a href="https://x.com/ClaudeDevs/status/2111168901723906176">① Claude 写了 Claude Code 约九成的代码；Code Review 是关键</a> — 你不写代码，用不上。值得记住的是思路：AI 产出变多以后，瓶颈在检查环节，跟你所有草稿都要你本人审是一回事。</li><li><a href="https://x.com/elonmusk/status/2111131160348688395">① (borderline) X 广告新规：难看、刺耳、夸大的广告会被禁投 <i>(borderline)</i></a> — 你现在不投广告，所以列为擦边。如果以后给 YouChina 或其他产品在 X 投广告，要记得这条。</li></ul><p>Private feed for Fisher. Nothing in this episode was posted or sent; replies mentioned are drafts.</p>]]></content:encoded>
+<itunes:summary>要点：今天的待办：先确认两件事——原创帖最后一句是不是符合真实感受、自己的页面标题里有没有连字符；然后发原创帖（注意别和第 9 条回复重复），再挑几条回复亲自发出去。
+
+Chapters:
+0:00 Cold open
+0:48 Intro
+2:47 Segment 1 — Top stories: agent architecture and communication
+16:06 Segment 2 — Growth, conversion, and brand
+23:02 Break
+23:29 Segment 3 — AI agents as users, search, and quick hits
+36:03 Segment 4 — What Fisher could post and reply today
+42:29 Sign-off
+
+Trending:
+- ①②③ Lee Robinson 讲「常驻 Agent」怎么搭：记忆分四层，先自己想办法，最后才问人
+- ①②③ Matt Pocock：2027 年最值钱的 AI 技能是「说清楚你要什么」
+- ①②③ 爆款不等于转化：4 千浏览的案例帖比 60 万浏览的帖带来更多客户
+- ①②③ levelsio：结账页加一个「不想加入？告诉我为什么」
+- ①② Greg Isenberg：Agent 要用的工具正在变成独立生意
+- ①② Eric Siu：新线索 60 秒内打回去，交给 Bot 做
+- ①③ Lily Ray：带连字符的品牌名在 AI Overview 标题里被截断
+- ③ Allie K. Miller：用了 Instinct 后，她的 Google 使用降了九成
+- ③ 「被认出来不值钱，改变对方的判断才值钱」
+- ③ Ben Tossell 花一整天搭 Agent：开线程、发邮件、更新共享任务表和工作日志
+- ③ 中文：Claude Code 老把口水话直接写进网页，怎么约束？
+- ① Claude 写了 Claude Code 约九成的代码；Code Review 是关键
+- ① (borderline) X 广告新规：难看、刺耳、夸大的广告会被禁投</itunes:summary>
+<enclosure url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/episodes/daily-signal-2026-10-17.mp3" length="17889691" type="audio/mpeg"/>
+<itunes:duration>0:43:11</itunes:duration>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+<podcast:transcript url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-17.vtt" type="text/vtt" language="en" rel="captions"/>
+<podcast:transcript url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-17.srt" type="application/x-subrip" language="en" rel="captions"/>
+<podcast:chapters url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-17.chapters.json" type="application/json+chapters"/>
+</item>
+<item>
+<title>The Daily Signal - Oct 16, 2026</title>
+<guid isPermaLink="false">daily-signal-2026-10-16</guid>
+<pubDate>Fri, 16 Oct 2026 07:30:00 +0800</pubDate>
+<description>要点：今天的待办：选一条原创发，确认 Lily Ray 那条的事实，再挑几条回复。
+
+Chapters:
+0:00 Cold open
+0:28 Intro
+1:30 Segment 1 — Top stories: agent memory and standards
+5:55 Segment 2 — Build and design
+10:25 Break
+10:42 Segment 3 — Growth and search
+16:32 Segment 4 — Quick hits
+18:45 Segment 5 — What to post and reply
+20:31 Sign-off
+
+Trending:
+- ①②③ 「你的 Agent 记忆在骗你」：规则文件会过期，AI 会照旧执行
+- ①③ Eric Siu：「我用 AI 守住标准，而不是多产出」
+- ①② 用同一个模型做网站，长得都一样：要点名你不想要的样式
+- ①③ ChatGPT 链接 UTM 问题已修好；Lily Ray 想要 GSC 更细的 AI 流量数据
+- ① 排名追踪坏了（Poisoned SERPs），有人用 MCP + Claude 每天自己查
+- ①③ 「2010 年代的实习生」= 今天没人管的编程 Agent
+- ③ 个人 Agent：最后是一个对话框，还是好几个 Agent？
+- ①② 「先学你写过的所有东西，再做成写作技能」：Greg Isenberg 的 Gemini 4 Argon 十条
+- ①③ 网站变成对话？用户其实只想看自己的预约号
+- ① Claude Code Review 正式开放；Opus 5.5 快速模式取消排队但更贵
+- ① (borderline) 卖数据给 AI 公司：Labs 买的是工作流，不是文件
+- (borderline) 「我的 Bot 一周自己赚了钱」：模板免费送</description>
+<content:encoded><![CDATA[<p><b>要点：</b>今天的待办：选一条原创发，确认 Lily Ray 那条的事实，再挑几条回复。</p><p>Transcript (time-synced, VTT): <a href="/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-16.vtt">open</a></p><p><b>Chapters</b><br>0:00 Cold open<br>0:28 Intro<br>1:30 Segment 1 — Top stories: agent memory and standards<br>5:55 Segment 2 — Build and design<br>10:25 Break<br>10:42 Segment 3 — Growth and search<br>16:32 Segment 4 — Quick hits<br>18:45 Segment 5 — What to post and reply<br>20:31 Sign-off</p><p><b>Trending</b></p><ul><li><a href="https://x.com/kloss_xyz/status/2110809174024060936">①②③ 「你的 Agent 记忆在骗你」：规则文件会过期，AI 会照旧执行</a> — 你这边正好有活例子：memory.md 里 10-15 一上午改了两次存储方案（09:43 云端电脑是唯一总账本 → 10:29 改成 L 机），旧的那条还留在文件里，README 第一行也还写着「云端电脑，唯一事实来源」。新加入的 Bot 先读到哪条就信哪条。</li><li><a href="https://x.com/ericosiu/status/2110807988575343100">①③ Eric Siu：「我用 AI 守住标准，而不是多产出」</a> — 跟你的规矩是同一个思路：X 首页每天只读一次、接近额度就停；所有草稿你自己点发。昨天回过他「只读 Bot」那帖，今天这条可以接着聊。</li><li><a href="https://x.com/shannholmberg/status/2110828395865292993">①② 用同一个模型做网站，长得都一样：要点名你不想要的样式</a> — 你不写代码，网站都是让 AI 做的（YouChina、Burn451、Aluminium China），这条直接能用。和你给文案定的「不要 AI 腔」规则是一回事：写清楚具体不要哪几种说法，比笼统一句管用。</li><li><a href="https://x.com/lilyraynyc/status/2110814054633578871">①③ ChatGPT 链接 UTM 问题已修好；Lily Ray 想要 GSC 更细的 AI 流量数据</a> — 你的 WM-P2b 选题（「UTM 没了怎么办，用 Bing AI Performance 看引用」）前提变了：问题已修复，选题要改角度或放弃。素材 EV-02（零广告；AI 助手是第三大来源）仍然能用。</li><li><a href="https://x.com/brodieseo/status/2110799125822275699">① 排名追踪坏了（Poisoned SERPs），有人用 MCP + Claude 每天自己查</a> — 你做 GEO/SEO，又不写代码，这种「接一个工具让 AI 每天替你查」正是你的玩法。工具效果是作者自己说的，没有独立验证。</li><li><a href="https://x.com/staysaasy/status/2110783713956999560">①③ 「2010 年代的实习生」= 今天没人管的编程 Agent</a> — 你带过团队，这个比喻很好接：你给 AI 写任务时，其实就是在写一份清楚的工作交接单（目标、负责人、交付物、怎么算完——跟你团队规则里的交接字段一样）。</li><li><a href="https://x.com/bentossell/status/2110848057072046197">③ 个人 Agent：最后是一个对话框，还是好几个 Agent？</a> — 你就是「好几个 Agent」那一派的真实用户（个人品牌、收入机会、Owner 分工），能给一个有经验的回答，而不是站队。</li><li><a href="https://x.com/gregisenberg/status/2110870855378952314">①② 「先学你写过的所有东西，再做成写作技能」：Greg Isenberg 的 Gemini 4 Argon 十条</a> — 你的口吻规则正好多一层：不是「读完全部」，而是只读 2025 年以前的公众号，因为后来的 AI 主题文章和英文 X 帖本身已经被 AI 影响了。这是有经验的人才会说的细节。</li><li><a href="https://x.com/pmitu/status/2110794025964028015">①③ 网站变成对话？用户其实只想看自己的预约号</a> — 三个帖放一起正好是一个增长判断：对话适合「不知道要找什么」的用户，菜单适合「知道要什么」的用户。做旅游站（YouChina）的人很有体会。</li><li><a href="https://x.com/ClaudeDevs/status/2110866210573386065">① Claude Code Review 正式开放；Opus 5.5 快速模式取消排队但更贵</a> — 你不写代码，Code Review 用不上。快速模式要注意的是计费：不小心开了会额外花钱。</li><li><a href="https://x.com/troyaitken_/status/2110797903988216255">① (borderline) 卖数据给 AI 公司：Labs 买的是工作流，不是文件 <i>(borderline)</i></a> — 和你的 CRM 文章（DR-08《当老板自己用 AI 搭 CRM》）有一点关系：老板自己的客户记录正在变成可以卖的资产。擦边，因为是卖方说法。</li><li><a href="https://x.com/AlexFinn/status/2110851435223285909">(borderline) 「我的 Bot 一周自己赚了钱」：模板免费送 <i>(borderline)</i></a> — 和你的规矩正相反（你的 Bot 不对外发任何东西）。收入说法无法核实，所以列为擦边，不建议照搬。</li></ul><p>Private feed for Fisher. Nothing in this episode was posted or sent; replies mentioned are drafts.</p>]]></content:encoded>
+<itunes:summary>要点：今天的待办：选一条原创发，确认 Lily Ray 那条的事实，再挑几条回复。
+
+Chapters:
+0:00 Cold open
+0:28 Intro
+1:30 Segment 1 — Top stories: agent memory and standards
+5:55 Segment 2 — Build and design
+10:25 Break
+10:42 Segment 3 — Growth and search
+16:32 Segment 4 — Quick hits
+18:45 Segment 5 — What to post and reply
+20:31 Sign-off
+
+Trending:
+- ①②③ 「你的 Agent 记忆在骗你」：规则文件会过期，AI 会照旧执行
+- ①③ Eric Siu：「我用 AI 守住标准，而不是多产出」
+- ①② 用同一个模型做网站，长得都一样：要点名你不想要的样式
+- ①③ ChatGPT 链接 UTM 问题已修好；Lily Ray 想要 GSC 更细的 AI 流量数据
+- ① 排名追踪坏了（Poisoned SERPs），有人用 MCP + Claude 每天自己查
+- ①③ 「2010 年代的实习生」= 今天没人管的编程 Agent
+- ③ 个人 Agent：最后是一个对话框，还是好几个 Agent？
+- ①② 「先学你写过的所有东西，再做成写作技能」：Greg Isenberg 的 Gemini 4 Argon 十条
+- ①③ 网站变成对话？用户其实只想看自己的预约号
+- ① Claude Code Review 正式开放；Opus 5.5 快速模式取消排队但更贵
+- ① (borderline) 卖数据给 AI 公司：Labs 买的是工作流，不是文件
+- (borderline) 「我的 Bot 一周自己赚了钱」：模板免费送</itunes:summary>
+<enclosure url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/episodes/daily-signal-2026-10-16.mp3" length="9704639" type="audio/mpeg"/>
+<itunes:duration>0:20:56</itunes:duration>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+<podcast:transcript url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-16.vtt" type="text/vtt" language="en" rel="captions"/>
+<podcast:transcript url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-16.srt" type="application/x-subrip" language="en" rel="captions"/>
+<podcast:chapters url="https://fisher521.github.io/daily-signal-feed/lxVw7e6Vy6Iy1lAI7XHGxofA/tx/daily-signal-2026-10-16.chapters.json" type="application/json+chapters"/>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,1616 @@
+1
+00:00:00,000 --> 00:00:07,744
+Alex: Imagine you spend months doing everything right so Google's A I will cite your website at the top of the search page.
+
+2
+00:00:08,319 --> 00:00:11,975
+Maya: And then one morning, you check the search results, and there it is.
+
+3
+00:00:11,975 --> 00:00:14,225
+Maya: Your link is right there in the footnote.
+
+4
+00:00:14,855 --> 00:00:15,957
+Alex: Great news, right?
+
+5
+00:00:15,957 --> 00:00:22,571
+Alex: Except when you read the sentence right next to your link, it says something your page never said.
+
+6
+00:00:22,571 --> 00:00:25,142
+Alex: Or worse, it says the exact opposite.
+
+7
+00:00:25,748 --> 00:00:29,310
+Maya: Researchers just checked forty days of Google A I Overviews.
+
+8
+00:00:29,310 --> 00:00:37,147
+Maya: And they found that about one in nine claims could not be backed up by the very web pages Google linked to.
+
+9
+00:00:37,642 --> 00:00:50,803
+Alex: Today we talk about why getting cited by A I is not the same as getting quoted right, where the real bottleneck moves when A I does the work, and why Fisher's bots are never allowed to press send.
+
+10
+00:00:52,703 --> 00:00:59,043
+Alex: Welcome to The Daily Signal. Your daily download on A I, growth, and building things.
+
+11
+00:00:59,653 --> 00:01:00,821
+Alex: I'm Alex.
+
+12
+00:01:01,446 --> 00:01:07,117
+Maya: And I'm Maya. It's Sunday, October eighteenth, twenty twenty-six.
+
+13
+00:01:07,568 --> 00:01:08,490
+Alex: Happy Sunday, Fisher.
+
+14
+00:01:08,490 --> 00:01:14,642
+Alex: Before we get into the stories, let's do our quick daily note on how today's feed was read.
+
+15
+00:01:15,256 --> 00:01:21,272
+Maya: Everything in today's show comes from Fisher's personal X home timeline.
+
+16
+00:01:21,272 --> 00:01:27,288
+Maya: Specifically, the chronological Following feed, read through his connected account, hawking five twenty.
+
+17
+00:01:27,898 --> 00:01:34,656
+Alex: Following the daily rule, it was read just once early this morning around six fifteen a.m.
+
+18
+00:01:34,656 --> 00:01:35,451
+Alex: Beijing time.
+
+19
+00:01:35,451 --> 00:01:43,005
+Alex: We read two pages, which came to one hundred ninety-nine posts, covering from eight thirty-nine p.m.
+
+20
+00:01:43,005 --> 00:01:47,378
+Alex: yesterday evening to six thirteen a.m. this morning, Beijing time.
+
+21
+00:01:47,921 --> 00:01:53,282
+Maya: That means posts from about six fifteen a.m. to eight forty p.m.
+
+22
+00:01:53,282 --> 00:01:58,643
+Maya: yesterday, Beijing time, were not read. We didn't flip to a third page.
+
+23
+00:01:58,643 --> 00:02:01,707
+Maya: Nothing was liked, replied to, reposted, or followed.
+
+24
+00:02:01,707 --> 00:02:06,302
+Maya: We didn't open a browser, and Xiaohongshu was not opened either.
+
+25
+00:02:06,813 --> 00:02:11,417
+Alex: And as always, a lot of noise was filtered out.
+
+26
+00:02:11,417 --> 00:02:53,321
+Alex: Elon Musk's Roadster and Starlink and political posts, Donald Trump endorsement posts, Yann LeCun's political reposts and Roadster physics breakdown, levelsio's travel notes from Brazil and Krakow, Justin Sun's crypto token burn, a flood of posts about DeepSeek version four point one Flash going live, promotions for HyperFrames and vibecodeapp, marketing pitches about a piano app making seven hundred thousand dollars a month or Claude copying any app, A I movie trailers, model training papers, a course post, free weekend promos, follower celebration posts, and workplace rants.
+
+27
+00:02:53,827 --> 00:02:59,822
+Maya: That leaves us with thirteen clean items today, including one borderline item at the end.
+
+28
+00:03:00,323 --> 00:03:02,921
+Alex: Here's what's coming today. One.
+
+29
+00:03:02,921 --> 00:03:14,059
+Alex: Why Google's A I Overviews sometimes say things their own linked sources don't support, and how an internet run by A I agents reshapes websites and travel pages.
+
+30
+00:03:14,598 --> 00:03:15,032
+Maya: Two.
+
+31
+00:03:15,032 --> 00:03:29,602
+Maya: Why François Chollet says software companies still aren't making higher profits even though agents write almost all the code, plus Eric Siu's outreach bot that prepares drafts every day without ever pressing send.
+
+32
+00:03:30,153 --> 00:03:30,612
+Alex: Three.
+
+33
+00:03:30,612 --> 00:03:43,024
+Alex: A twenty-four-part growth teardown of Cal A I's onboarding flow, why one case study people remember keeps selling for months, and a security alert from OpenCode.
+
+34
+00:03:43,416 --> 00:03:57,554
+Maya: 简单说：今天聊被 A I 引用为什么不等于被说对、当生产变便宜后真正的瓶颈挪到了哪里，以及为什么永远别把发送键交给机器人。
+
+35
+00:04:00,404 --> 00:04:02,471
+Alex: Segment one. Top stories.
+
+36
+00:04:03,120 --> 00:04:06,726
+Maya: Our first story connects straight to our cold open.
+
+37
+00:04:06,726 --> 00:04:13,536
+Maya: It comes from an account called heynavtoor, with about one hundred fifty-two thousand followers on X.
+
+38
+00:04:14,145 --> 00:04:18,970
+Alex: He shared a study from three researchers at Washington University in Saint Louis.
+
+39
+00:04:18,970 --> 00:04:25,279
+Alex: Now, let's be upfront: the numbers we have come from the X post summarizing the study.
+
+40
+00:04:25,279 --> 00:04:28,619
+Alex: We did not read the original research paper itself.
+
+41
+00:04:29,194 --> 00:04:29,643
+Maya: Right.
+
+42
+00:04:29,643 --> 00:04:37,198
+Maya: According to the post, those three researchers ran searches on Google's own trending topics for forty days.
+
+43
+00:04:37,198 --> 00:04:47,270
+Maya: They collected every single source cited inside Google's A I Overviews—those A I summary boxes at the top of the search results.
+
+44
+00:04:47,918 --> 00:04:51,301
+Alex: And how did they test whether the A I was telling the truth?
+
+45
+00:04:51,794 --> 00:04:56,897
+Maya: They broke each A I summary down into individual claims, sentence by sentence.
+
+46
+00:04:56,897 --> 00:05:04,748
+Maya: Then they checked each claim one by one against the actual web page that Google linked to as its source.
+
+47
+00:05:05,230 --> 00:05:06,249
+Alex: And what did they find?
+
+48
+00:05:06,822 --> 00:05:16,591
+Maya: About eleven percent—roughly one in nine—of the claims in Google's A I Overviews had no basis in the cited web page.
+
+49
+00:05:16,591 --> 00:05:21,476
+Maya: And in some cases, the cited page actually said the exact opposite.
+
+50
+00:05:21,935 --> 00:05:26,936
+Alex: Wait a second. So the footnote link is real. It's not a broken link.
+
+51
+00:05:27,393 --> 00:05:33,126
+Maya: No, the footnote is completely real! The web page exists. The link works.
+
+52
+00:05:33,126 --> 00:05:39,300
+Maya: But what Google's A I claims that page says is not necessarily true.
+
+53
+00:05:39,853 --> 00:05:51,516
+Alex: That is a huge wake-up call for anyone working on G E O—Generative Engine Optimization, which is how you get A I search engines and assistants to cite your site.
+
+54
+00:05:52,059 --> 00:05:58,161
+Maya: Because most people think the game ends the moment the A I puts your link in the summary.
+
+55
+00:05:58,161 --> 00:06:04,602
+Maya: This study shows that's only half the battle. The A I can cite you and still misquote you.
+
+56
+00:06:05,336 --> 00:06:18,479
+Maya: 也就是说：脚注里的链接是真的，但 Google 的 A I 总结出来的话，有大概九分之一在原网页里根本找不到依据，甚至完全相反。
+
+57
+00:06:19,055 --> 00:06:21,918
+Alex: Why does this matter so much to Fisher's work?
+
+58
+00:06:22,471 --> 00:06:33,489
+Maya: Because if an A I summarizes a travel guide or a product page and gets a core fact backwards, the user gets bad advice, even while looking at your brand name in the footnote.
+
+59
+00:06:34,038 --> 00:06:38,087
+Alex: So how do you defend against an A I misreading your page?
+
+60
+00:06:38,586 --> 00:06:48,010
+Maya: The clearer your key facts are written, and the easier they are to verify on the page, the smaller the chance the A I gets them wrong.
+
+61
+00:06:48,010 --> 00:06:54,292
+Maya: And that maps directly to Fisher's library item D R oh three, plus D R oh seven.
+
+62
+00:06:54,745 --> 00:06:58,943
+Alex: Remind us what D R oh three and D R oh seven are.
+
+63
+00:06:59,432 --> 00:07:10,499
+Maya: D R oh three is Fisher's rule that at the bottom of every page, you write down how the facts were verified and the exact date they were checked, along with the official source.
+
+64
+00:07:10,499 --> 00:07:16,190
+Maya: And D R oh seven is the rule that A I only cites pages it dares to trust.
+
+65
+00:07:16,779 --> 00:07:29,826
+Alex: So for a writing angle, the daily notes suggest combining D R oh three and D R oh seven around the theme: "When A I cites you, that doesn't mean A I got you right."
+
+66
+00:07:30,316 --> 00:07:40,469
+Maya: And remember our hard rule here: if Fisher writes that post, he should use only general examples and never include absolute traffic numbers from YouChina.
+
+67
+00:07:40,469 --> 00:07:44,936
+Maya: And we have a reply draft for heynavtoor in Segment four.
+
+68
+00:07:45,460 --> 00:07:57,823
+Alex: So the takeaway is: getting into the A I footnote is only step one; stating your facts and verification dates clearly is what keeps the A I from misquoting you.
+
+69
+00:07:58,744 --> 00:08:07,564
+Maya: 一句话：被 A I 引用不等于被说对，把关键事实和核实日期写清楚，才不容易被传错。
+
+70
+00:08:10,414 --> 00:08:18,721
+Alex: Let's pair that right away with story seven, from Peter Yang, who has about two hundred eighty-eight thousand followers on X.
+
+71
+00:08:19,337 --> 00:08:27,877
+Maya: Peter published a new article asking a provocative question: "Is software dead, or is it just not built for humans anymore?"
+
+72
+00:08:28,358 --> 00:08:32,522
+Alex: Okay, that title grabs your attention. How did he break it down?
+
+73
+00:08:33,025 --> 00:08:36,237
+Maya: In the article, he gave four arguments on each side.
+
+74
+00:08:36,237 --> 00:08:44,587
+Maya: Because it was a long post, our A P I read only captured the first part, so we will stick strictly to what we actually read.
+
+75
+00:08:45,213 --> 00:08:46,482
+Alex: What was in the part we read?
+
+76
+00:08:47,034 --> 00:08:59,239
+Maya: First, he pointed out that to replace a S a a S tool—that's software as a service, tools you pay a monthly or yearly subscription for—you don't need to rebuild the whole product.
+
+77
+00:08:59,239 --> 00:09:03,856
+Maya: You only need to copy the twenty percent of features that you actually use.
+
+78
+00:09:04,476 --> 00:09:06,590
+Alex: Did he give a real example of doing that?
+
+79
+00:09:07,167 --> 00:09:07,551
+Maya: Yes.
+
+80
+00:09:07,551 --> 00:09:16,852
+Maya: He said he had Claude build a small feature in five minutes that replaced a YouTube tool he was paying two hundred dollars a year for.
+
+81
+00:09:17,451 --> 00:09:21,203
+Alex: Five minutes to replace a two-hundred-dollar-a-year subscription.
+
+82
+00:09:21,203 --> 00:09:22,908
+Alex: What were his next points?
+
+83
+00:09:23,377 --> 00:09:29,577
+Maya: His second point is that A I agents are replacing humans as the primary users of software.
+
+84
+00:09:29,577 --> 00:09:37,966
+Maya: And his third point balances it out: while building the initial software is easy now, maintaining it and supporting customers is still hard.
+
+85
+00:09:37,966 --> 00:09:43,802
+Maya: The rest of his post after that was cut off in the A P I read.
+
+86
+00:09:44,361 --> 00:09:47,128
+Alex: Did Peter Yang have a second post in the feed today?
+
+87
+00:09:47,679 --> 00:09:48,423
+Maya: He did.
+
+88
+00:09:48,423 --> 00:09:56,601
+Maya: He shared a prompt you can use to have an A I audit the third-party apps connected to your Google account.
+
+89
+00:09:56,601 --> 00:09:59,203
+Maya: And notice the instruction inside that prompt.
+
+90
+00:09:59,203 --> 00:10:05,151
+Maya: Roughly: show me your recommendations before changing anything, and only disconnect the ones I explicitly approve.
+
+91
+00:10:05,776 --> 00:10:11,474
+Alex: Hey, look at that rule! Show me first, and only touch what I clearly approve.
+
+92
+00:10:11,474 --> 00:10:16,413
+Alex: That is the exact same safety mindset Fisher uses with his own assistants.
+
+93
+00:10:16,935 --> 00:10:30,483
+Maya: 简单说：软件的主要用户正在从人变成 Agent；而且哪怕让 A I 去查账号权限，也得规定“先给建议、我点头才准动手”。
+
+94
+00:10:31,052 --> 00:10:47,863
+Alex: And for a writing angle on Peter's main article, the daily notes point to Fisher's library item E V oh two—where on his site with zero ad spend, A I assistants are already the third largest traffic source—combined with D R oh seven.
+
+95
+00:10:48,325 --> 00:10:56,723
+Maya: The angle is: "In the future, your pages will be read by agents first." As always, no absolute numbers in public.
+
+96
+00:10:56,723 --> 00:11:06,322
+Maya: Peter's full article is worth Fisher reading when he has time, and we have a sharp reply draft for Peter in Segment four.
+
+97
+00:11:06,849 --> 00:11:14,129
+Alex: So the takeaway is: write your pages for an agent reader that just wants clean answers to small questions.
+
+98
+00:11:15,091 --> 00:11:23,106
+Maya: 一句话：当 Agent 成了主要读者，网页就得写成一节回答一个清楚的小问题。
+
+99
+00:11:25,956 --> 00:11:32,949
+Alex: And if agents really are becoming the main users of the web, who wins and who loses?
+
+100
+00:11:32,949 --> 00:11:44,878
+Alex: That brings us to story eight, from an account called j s p u j j i, based in Saint Louis, with about one hundred eighty-two thousand followers.
+
+101
+00:11:45,358 --> 00:11:53,788
+Maya: He posted a chart laying out the winners, losers, and semi-losers from what he calls the agent-ification of the internet.
+
+102
+00:11:53,788 --> 00:11:59,919
+Maya: Keep in mind, this is purely his personal opinion—there is no data attached to it.
+
+103
+00:12:00,532 --> 00:12:04,478
+Alex: Walk us through his three columns. Who did he put in the winners column?
+
+104
+00:12:05,004 --> 00:12:08,985
+Maya: Businesses with physical goods or offline capabilities.
+
+105
+00:12:08,985 --> 00:12:15,240
+Maya: Restaurants, real estate, supermarkets, small e-commerce shops, and actual hotels.
+
+106
+00:12:15,886 --> 00:12:21,132
+Alex: Because an A I agent cannot cook your dinner or give you a physical bed to sleep in.
+
+107
+00:12:21,132 --> 00:12:23,755
+Alex: Who did he put in the semi-losers column?
+
+108
+00:12:24,323 --> 00:12:30,338
+Maya: Companies where the front end is online, but the back end is physical logistics.
+
+109
+00:12:30,338 --> 00:12:32,916
+Maya: He named Amazon, DoorDash, and Instacart.
+
+110
+00:12:33,487 --> 00:12:35,418
+Alex: And who is in his full losers column?
+
+111
+00:12:35,996 --> 00:12:37,584
+Maya: Middlemen and aggregators.
+
+112
+00:12:37,584 --> 00:12:49,231
+Maya: Specifically, O T A s—online travel agencies like Expedia—along with Airbnb, price comparison sites, and content or lead-generation businesses.
+
+113
+00:12:49,231 --> 00:12:55,584
+Maya: His blunt conclusion is: "The front end of the internet is dead."
+
+114
+00:12:56,170 --> 00:12:58,841
+Alex: Hold on. Let's pause right there.
+
+115
+00:12:58,841 --> 00:13:03,420
+Alex: Content sites and travel sites are sitting right in his losers column.
+
+116
+00:13:03,900 --> 00:13:04,598
+Maya: They are.
+
+117
+00:13:04,598 --> 00:13:10,177
+Maya: Which puts a travel content site like Fisher's right in the crosshairs of this argument.
+
+118
+00:13:10,715 --> 00:13:14,549
+Alex: So does Fisher agree that all travel content sites get wiped out?
+
+119
+00:13:15,046 --> 00:13:20,719
+Maya: No, and this is where Fisher's library item D R oh six comes in.
+
+120
+00:13:20,719 --> 00:13:27,525
+Maya: D R oh six says that for a travel site, being verifiable matters more than just ranking high.
+
+121
+00:13:28,055 --> 00:13:31,532
+Alex: Let's separate the two kinds of travel pages.
+
+122
+00:13:31,532 --> 00:13:39,645
+Alex: If a site just compares prices, or rewrites generic lists from other blogs, an A I agent can replace that easily.
+
+123
+00:13:40,114 --> 00:13:42,567
+Maya: Exactly. Price comparison gets eaten first.
+
+124
+00:13:42,567 --> 00:13:50,333
+Maya: But what about local information on the ground that a real person actually checked, and put a date on?
+
+125
+00:13:50,333 --> 00:13:54,012
+Maya: That is much harder for an agent to replace.
+
+126
+00:13:54,756 --> 00:14:07,593
+Maya: 也就是说：纯比价和拼凑的内容站会被 Agent 吃掉，但有人真正核实过、标了日期的一手当地信息，机器没法凭空替代。
+
+127
+00:14:08,086 --> 00:14:20,119
+Alex: For writing, the daily notes say don't write a standalone post on this—just reply directly to j s p u j j i using that angle from D R oh six.
+
+128
+00:14:20,119 --> 00:14:29,599
+Alex: And there's a note to be careful about how closely Fisher links his personal X account to YouChina, which we'll cover in Segment four.
+
+129
+00:14:30,183 --> 00:14:39,496
+Maya: So the takeaway is: don't build a middleman page that just compares prices; build the verified local source that an agent has to rely on.
+
+130
+00:14:40,706 --> 00:14:48,847
+Maya: 一句话：比价信息最容易被替代，真去核实过的一手当地信息才是护城河。
+
+131
+00:14:51,697 --> 00:14:56,707
+Alex: Segment two. A I workflows, bottlenecks, and human-in-the-loop rules.
+
+132
+00:14:57,331 --> 00:14:59,742
+Maya: Story two is a big one.
+
+133
+00:14:59,742 --> 00:15:08,581
+Maya: It comes from François Chollet, a well-known A I researcher with about seven hundred forty-eight thousand followers on X.
+
+134
+00:15:08,581 --> 00:15:11,796
+Maya: His post got four hundred seventy-four bookmarks.
+
+135
+00:15:12,378 --> 00:15:18,599
+Alex: He shared four observations about what he put in quotes as the "total" automation of software engineering.
+
+136
+00:15:18,599 --> 00:15:20,795
+Alex: Let's go through all four.
+
+137
+00:15:21,271 --> 00:15:29,213
+Maya: First: there are more software engineers today than there were in twenty twenty-five, and demand for them is still rising.
+
+138
+00:15:29,832 --> 00:15:35,602
+Alex: Wait—people predicted software engineers would disappear! Instead, there are more of them.
+
+139
+00:15:35,602 --> 00:15:37,378
+Alex: What's observation two?
+
+140
+00:15:38,017 --> 00:15:41,438
+Maya: Second: they have never been more exhausted.
+
+141
+00:15:42,069 --> 00:15:47,992
+Alex: More engineers, and they're more tired than ever. Why? What's observation three?
+
+142
+00:15:48,556 --> 00:15:51,739
+Maya: Third: they barely write code by hand anymore.
+
+143
+00:15:51,739 --> 00:15:56,115
+Maya: Almost all of the code is written by A I agents.
+
+144
+00:15:56,594 --> 00:16:04,757
+Alex: Okay, so agents write almost all the code, engineers are exhausted, and what happens to the companies employing them?
+
+145
+00:16:04,757 --> 00:16:06,476
+Alex: That's observation four.
+
+146
+00:16:06,964 --> 00:16:13,792
+Maya: Fourth: for the most part, the profits of the companies hiring them have not improved from using A I.
+
+147
+00:16:14,427 --> 00:16:19,012
+Alex: Let's put those four pieces together. Agents write the code.
+
+148
+00:16:19,012 --> 00:16:24,015
+Alex: Engineers are working harder than ever. And company profits haven't budged.
+
+149
+00:16:24,015 --> 00:16:26,516
+Alex: How does Chollet explain that paradox?
+
+150
+00:16:27,076 --> 00:16:29,798
+Maya: He says you have to think in systems.
+
+151
+00:16:29,798 --> 00:16:35,581
+Maya: When you automate one step of a process, you create new friction somewhere else in the system.
+
+152
+00:16:35,581 --> 00:16:39,663
+Maya: The bottleneck didn't vanish. It just moved to a new spot.
+
+153
+00:16:40,149 --> 00:16:45,947
+Alex: And two other accounts in the feed touched on the same theme last night.
+
+154
+00:16:45,947 --> 00:16:53,400
+Alex: An account called staysaasy, with seventeen thousand followers, noted that bug rates across the industry are going down.
+
+155
+00:16:54,027 --> 00:17:06,157
+Maya: Meanwhile, an account called e p t w t s, with one hundred thirty-nine thousand followers, pointed out that building a good product that thousands of people actually use is still very hard.
+
+156
+00:17:06,157 --> 00:17:14,362
+Maya: You still have to know what you want to build, understand user experience, and go back and forth with the agent many times.
+
+157
+00:17:15,040 --> 00:17:26,306
+Maya: 简单说：把写代码自动化之后，公司的利润并没暴涨，因为系统里的卡点只是从“生产”挪到了别的地方。
+
+158
+00:17:26,869 --> 00:17:29,334
+Alex: Now remember, Fisher does not write code.
+
+159
+00:17:29,334 --> 00:17:33,206
+Alex: Why does François Chollet's point hit home for Fisher?
+
+160
+00:17:33,731 --> 00:17:40,526
+Maya: Because Fisher has worked in growth for over a decade, and this is the oldest law in growth!
+
+161
+00:17:40,526 --> 00:17:46,944
+Maya: When A I makes building pages and writing content cheap and fast, the bottleneck doesn't disappear.
+
+162
+00:17:46,944 --> 00:17:49,209
+Maya: It moves to distribution and trust.
+
+163
+00:17:49,741 --> 00:17:52,966
+Alex: Anyone can make a lot of pages fast now.
+
+164
+00:17:52,966 --> 00:17:58,699
+Alex: Getting the right people to find those pages and actually trust them is harder than ever.
+
+165
+00:17:59,197 --> 00:18:08,960
+Maya: That connects directly to Fisher's library item W M P five c—the core growth formula, and which variable changed in the A I era.
+
+166
+00:18:08,960 --> 00:18:17,971
+Maya: That's our backup idea for an original post today, and a great angle for replying to Chollet without ever claiming Fisher writes code.
+
+167
+00:18:18,429 --> 00:18:29,315
+Alex: So the takeaway is: when A I makes production cheap, stop obsessing over production speed and focus on where the bottleneck moved—distribution and trust.
+
+168
+00:18:30,349 --> 00:18:38,361
+Maya: 一句话：当 A I 把生产变便宜，真正的瓶颈就挪到了分发和信任上。
+
+169
+00:18:41,211 --> 00:18:48,022
+Alex: Story three comes from Eric Siu in Los Angeles, who has about forty-six thousand followers.
+
+170
+00:18:48,022 --> 00:18:52,705
+Alex: And this story inspired today's number one original post draft.
+
+171
+00:18:53,248 --> 00:19:05,712
+Maya: Eric posted about his "Outreach Agent." Every single day, this bot lines up a small batch of warm outreach email drafts—emails to people he already knows or has a connection with.
+
+172
+00:19:06,271 --> 00:19:07,967
+Alex: How does the bot pick who to email?
+
+173
+00:19:08,481 --> 00:19:14,345
+Maya: It only keeps the high-confidence ones, and it attaches the reasoning to every single draft.
+
+174
+00:19:14,345 --> 00:19:21,675
+Maya: And then—here is the key line—it waits for the boss to approve the batch before anything goes out.
+
+175
+00:19:22,275 --> 00:19:27,874
+Alex: In Eric's words: his Outreach Agent has never sent a single email on its own.
+
+176
+00:19:28,329 --> 00:19:36,660
+Maya: He said he built it for founders and salespeople who want help with outreach, but do not want to hand the "send" button over to a bot.
+
+177
+00:19:36,660 --> 00:19:45,917
+Maya: He also had a second post about a skill he built to run his YouTube channel—packaging, editing, and uploading—which he rated a seven point five out of ten.
+
+178
+00:19:46,441 --> 00:19:50,764
+Alex: Let's talk about that first post: never handing the send button to a bot.
+
+179
+00:19:51,220 --> 00:19:55,681
+Maya: That is literally the exact hard rule of Fisher's own assistant team!
+
+180
+00:19:55,681 --> 00:20:01,171
+Maya: In Fisher's setup, his bots research, draft, and check each other's work every day.
+
+181
+00:20:01,171 --> 00:20:09,063
+Maya: Not a single one of them is allowed to publish a post, send a reply, or send an email to an outside person.
+
+182
+00:20:09,538 --> 00:20:17,826
+Alex: Seeing someone like Eric Siu pitch "the bot never presses send" as a selling point to founders is great validation.
+
+183
+00:20:17,826 --> 00:20:26,114
+Alex: It shows that keeping the send button in human hands isn't being slow or timid—it's smart operations.
+
+184
+00:20:26,560 --> 00:20:38,836
+Maya: 也就是说：让助手每天准备好带依据的草稿、但绝不把发送键交给 Bot，不是保守，外面已经有人把它当卖点来讲了。
+
+185
+00:20:39,417 --> 00:20:54,225
+Alex: For writing, the daily notes anchor this on library item E V oh eight—Fisher's three-bot system and error correction log—and rule D R oh five, which holds the rules for his A I assistants.
+
+186
+00:20:54,761 --> 00:21:04,946
+Maya: It also works as another clean, everyday example for version three of Fisher's C R M article, D R oh eight: the bot prepares, the human decides.
+
+187
+00:21:04,946 --> 00:21:19,495
+Maya: And because we picked this theme for today's original post, we will talk in Segment four about whether to post the original or reply to Eric, so we don't repeat the exact same point twice in one morning.
+
+188
+00:21:20,050 --> 00:21:26,437
+Alex: So the takeaway is: let your agents do the prep work, and keep the send button for yourself.
+
+189
+00:21:27,470 --> 00:21:35,671
+Maya: 一句话：草稿写坏了随时能改，消息发出去收不回来，发送键必须留给人。
+
+190
+00:21:38,521 --> 00:21:42,928
+Alex: Speaking of agents sending emails, let's look at story ten.
+
+191
+00:21:42,928 --> 00:21:58,155
+Alex: This pairs a post from t h s o t t i a u x, who has about eight hundred eighty-six thousand followers, with two posts from Ben Tossell, who has about two hundred two thousand followers.
+
+192
+00:21:58,673 --> 00:22:03,811
+Maya: Let's start with t h s o t t i a u x.
+
+193
+00:22:03,811 --> 00:22:08,582
+Maya: He shared that his work agent coordinated with his personal agent over email.
+
+194
+00:22:09,150 --> 00:22:13,466
+Alex: Wait. His work agent emailed his personal agent? Why?
+
+195
+00:22:14,052 --> 00:22:21,849
+Maya: To request documents that the personal agent had access to, and then coordinate with his human accountant to file his taxes!
+
+196
+00:22:21,849 --> 00:22:24,077
+Maya: The whole thing took twenty minutes.
+
+197
+00:22:24,077 --> 00:22:28,161
+Maya: He ended the post by saying, roughly: we're still early.
+
+198
+00:22:28,682 --> 00:22:32,277
+Alex: And Ben Tossell jumped in on that theme too.
+
+199
+00:22:32,277 --> 00:22:37,868
+Alex: Yesterday we covered Ben's post about his own bot not checking its email.
+
+200
+00:22:37,868 --> 00:22:48,650
+Alex: Today Ben posted that when agents email each other, they are super polite, and that email threads are actually a great format for agent-to-agent conversations.
+
+201
+00:22:49,204 --> 00:22:59,666
+Maya: Ben also had a second post saying a whole generation of new product builders won't even know what a P R review is—that's a pull request review in software engineering.
+
+202
+00:23:00,269 --> 00:23:06,055
+Alex: Let's look at why email threads work for those agents, and how Fisher's assistants talk to each other.
+
+203
+00:23:06,687 --> 00:23:10,731
+Maya: Fisher's assistants don't send emails back and forth.
+
+204
+00:23:10,731 --> 00:23:20,841
+Maya: Instead, as recorded in library item E V oh eight, they talk to each other through shared group log files and a blackboard ticket system.
+
+205
+00:23:21,322 --> 00:23:32,100
+Alex: Whether you use an email thread like t h s o t t i a u x or a shared log file and ticket board like Fisher, what do they have in common?
+
+206
+00:23:32,736 --> 00:23:36,347
+Maya: Every single step leaves a written record that you can audit later!
+
+207
+00:23:36,898 --> 00:23:49,834
+Maya: 简单说：不管是让 Agent 互发邮件，还是像 Fisher 的团队那样用共享日志和工单板，核心都一样——每一步交接都必须留文字记录。
+
+208
+00:23:50,435 --> 00:23:55,234
+Alex: The daily notes say no need to write a standalone post here.
+
+209
+00:23:55,234 --> 00:24:07,232
+Alex: Since Fisher replied to Ben Tossell yesterday, skip replying to Ben today and use this angle to reply to t h s o t t i a u x instead.
+
+210
+00:24:07,844 --> 00:24:15,801
+Maya: So the takeaway is: make your agents communicate in writing so every handoff leaves a trail you can inspect.
+
+211
+00:24:16,978 --> 00:24:24,349
+Maya: 一句话：助手之间用文字留痕沟通，出问题时每一步都有账可查。
+
+212
+00:24:27,199 --> 00:24:32,818
+Alex: Once you have a written trail of mistakes, you start adding rules to your system.
+
+213
+00:24:32,818 --> 00:24:42,556
+Alex: And that leads right into story nine, from m v r c k h c k r, a small account with three hundred forty-two followers.
+
+214
+00:24:42,556 --> 00:24:45,928
+Alex: Fisher replied to a different post of his yesterday.
+
+215
+00:24:46,461 --> 00:24:50,033
+Maya: Today he posted a short thread about rules inside companies.
+
+216
+00:24:50,033 --> 00:25:02,534
+Maya: He started by saying that a company that runs on clear rules is the fairest place for an average person, because the system answers questions nobody should expect an individual to guess on their own.
+
+217
+00:25:03,147 --> 00:25:04,335
+Alex: That makes sense.
+
+218
+00:25:04,335 --> 00:25:10,674
+Alex: What happens in companies where rules and personal judgment get mixed up in a messy way?
+
+219
+00:25:11,127 --> 00:25:18,061
+Maya: In those companies, whenever one person makes a mistake, management slaps a brand-new rule onto everyone.
+
+220
+00:25:18,061 --> 00:25:27,442
+Maya: Then, when the next unexpected situation happens and there's no rule for it, the blame still falls right back on the worker.
+
+221
+00:25:28,017 --> 00:25:33,320
+Alex: And then he ended with a question that really makes you stop and think. What did he ask?
+
+222
+00:25:33,929 --> 00:25:38,194
+Maya: He asked: "Look at the last rule you added after a mistake.
+
+223
+00:25:38,194 --> 00:25:43,170
+Maya: Does it answer the next problem, or does it only answer the last one?"
+
+224
+00:25:43,723 --> 00:25:46,034
+Alex: Oh, that is such a good question.
+
+225
+00:25:46,034 --> 00:25:50,325
+Alex: "Does your new rule answer the next problem, or only the last one?"
+
+226
+00:25:50,920 --> 00:25:55,679
+Maya: Think about Fisher's own folder of assistant rules and his correction log.
+
+227
+00:25:55,679 --> 00:25:58,607
+Maya: That's library item D R oh five.
+
+228
+00:25:58,607 --> 00:26:09,590
+Maya: Many rules in there—like "every file has only one writer" or "if I don't reply, that is not a yes"—was added right after a real mistake happened.
+
+229
+00:26:10,185 --> 00:26:22,946
+Maya: 也就是说：每次出错后加新规矩时，都要问自己一句——这条规矩到底能不能防住下一类问题，还是只给上一次的失误打了个补丁？
+
+230
+00:26:23,436 --> 00:26:30,759
+Alex: The daily notes say don't write a standalone post on this, just use D R oh five to reply to him.
+
+231
+00:26:30,759 --> 00:26:41,743
+Alex: Even though he's a small account and we replied to another post of his yesterday, this is the only small account on our reply list today, and the angle is completely different.
+
+232
+00:26:42,266 --> 00:26:50,798
+Maya: So the takeaway is: audit your rulebook to make sure your rules prevent whole categories of mistakes, not just yesterday's accident.
+
+233
+00:26:51,984 --> 00:26:59,227
+Maya: 一句话：好规矩管的是一类问题，而不是只管上一次犯过的那个错。
+
+234
+00:27:02,077 --> 00:27:02,862
+Maya: Quick break.
+
+235
+00:27:02,862 --> 00:27:20,126
+Maya: When we come back: a twenty-four-part teardown of Cal A I's onboarding flow, why one case study brought in multiple six-figure deals over ten months, seven rules to stop Claude from sounding like a robot, and an OpenCode security alert.
+
+236
+00:27:20,746 --> 00:27:33,676
+Maya: 休息一下，马上回来聊 Cal A I 把注册放到付费墙之后的增长细节、怎么让案例替你卖货，以及几条实用的内容与安全提醒。
+
+237
+00:27:38,026 --> 00:27:44,725
+Alex: Welcome back. Segment three. Growth teardowns, writing rules, and quick hits.
+
+238
+00:27:45,365 --> 00:27:48,876
+Maya: Let's kick off Segment three with story five.
+
+239
+00:27:48,876 --> 00:27:55,900
+Maya: It comes from Alice Ercolani, based in San Marino, who has one thousand three hundred sixty-three followers.
+
+240
+00:27:55,900 --> 00:28:03,313
+Maya: She wrote a twenty-four-post thread breaking down the growth mechanics of an app called Cal A I.
+
+241
+00:28:03,878 --> 00:28:07,642
+Alex: Cal A I is an A I calorie-tracking app.
+
+242
+00:28:07,642 --> 00:28:16,298
+Alex: Her post mentions it makes four hundred thousand dollars a month, though as our notes point out, that number is not independently verified.
+
+243
+00:28:16,298 --> 00:28:19,310
+Alex: What did she find inside its onboarding flow?
+
+244
+00:28:19,828 --> 00:28:25,950
+Maya: Every single step is a classic growth technique applied to an A I subscription app.
+
+245
+00:28:25,950 --> 00:28:31,256
+Maya: First: the welcome screen has just one sentence of value and one button.
+
+246
+00:28:31,760 --> 00:28:34,735
+Alex: Simple start. What happens after you tap the button?
+
+247
+00:28:35,375 --> 00:28:44,744
+Maya: Second: it takes you through a long questionnaire, and on every question it reminds you that your answers are being used to build your custom plan.
+
+248
+00:28:44,744 --> 00:28:51,591
+Maya: Third: right when the user hits their peak moment of excitement, the app asks for an app store rating.
+
+249
+00:28:52,130 --> 00:28:55,256
+Alex: Catching people at the exact moment they feel good.
+
+250
+00:28:55,256 --> 00:28:58,034
+Alex: What about the free trial and the paywall?
+
+251
+00:28:58,680 --> 00:29:10,231
+Maya: Fourth: before asking for money, it shows a super clear three-day trial timeline and promises to send a reminder before charging you, which lowers trial anxiety.
+
+252
+00:29:10,231 --> 00:29:19,214
+Maya: And fifth—here is the standout move in post seventeen of twenty-four—it delays account creation until after the paywall!
+
+253
+00:29:19,767 --> 00:29:20,162
+Alex: Wait.
+
+254
+00:29:20,162 --> 00:29:27,894
+Alex: You go through the quiz, see your plan, hit the paywall, start your trial, and only create an account after that?
+
+255
+00:29:28,449 --> 00:29:28,888
+Maya: Yes!
+
+256
+00:29:28,888 --> 00:29:35,866
+Maya: Because asking people to register an email and password upfront is where the biggest drop-off happens.
+
+257
+00:29:35,866 --> 00:29:50,232
+Maya: She also noted two more details: every user gets a referral code that gives five dollars for inviting a friend, and their A S O—App Store Optimization—puts the main keywords near the front.
+
+258
+00:29:50,962 --> 00:30:02,683
+Maya: 简单说：Cal A I 把最容易流失用户的“注册账号”放到了付费墙之后，让用户先看到定制方案的价值，再动手注册。
+
+259
+00:30:03,282 --> 00:30:08,692
+Alex: Why did that specific detail—"put registration at the end"—jump out for Fisher?
+
+260
+00:30:09,258 --> 00:30:18,342
+Maya: Because it matches Fisher's own painful product lesson in library item W M P four b: "Seven users, thirty-one days no signup.
+
+261
+00:30:18,342 --> 00:30:30,833
+Maya: What I changed." When nobody is signing up for your product, maybe the problem isn't the product—maybe you put the registration wall way too early, before the user got any value.
+
+262
+00:30:31,368 --> 00:30:48,126
+Alex: So for a writing angle, the daily notes suggest pairing W M P four b—or W M P five a, about whether membership systems still work in A I subscriptions—with public examples like Cal A I.
+
+263
+00:30:48,126 --> 00:30:58,709
+Alex: The theme: "When nobody signs up, maybe you asked them to sign up too early." And remember: use public examples only, no personal numbers.
+
+264
+00:30:59,335 --> 00:31:08,874
+Maya: Plus, because Alice's account has just over a thousand followers, a thoughtful reply on her seventeenth post is more likely to be seen.
+
+265
+00:31:09,407 --> 00:31:17,221
+Alex: So the takeaway is: don't ask users to create an account before they have experienced what makes your product valuable.
+
+266
+00:31:18,261 --> 00:31:25,998
+Maya: 一句话：注册是最容易赶走人的一步，先让用户尝到甜头，再让他注册。
+
+267
+00:31:28,848 --> 00:31:35,028
+Alex: Story four is a follow-up from Marcel Kargul, who has about sixty thousand followers.
+
+268
+00:31:35,028 --> 00:31:41,209
+Alex: Yesterday we covered his post saying going viral is not the same as getting clients.
+
+269
+00:31:41,672 --> 00:31:49,468
+Maya: Today he shared a specific story about one single case study his team made for a client called sideshift.
+
+270
+00:31:49,468 --> 00:31:55,622
+Maya: Again, the financial numbers here are his own claim on X and are not verified.
+
+271
+00:31:56,158 --> 00:31:59,401
+Alex: What did he say that one case study did for his business?
+
+272
+00:31:59,955 --> 00:32:06,321
+Maya: He said over the past ten months, that single case study brought them multiple six-figure client deals.
+
+273
+00:32:06,321 --> 00:32:16,579
+Maya: And on almost every first sales call, the prospect says the exact same thing: "I saw what you did for sideshift, and I want that same level of quality."
+
+274
+00:32:17,219 --> 00:32:18,320
+Alex: Think about that.
+
+275
+00:32:18,320 --> 00:32:26,762
+Alex: Ten months later, one well-documented project is still doing the selling for him before he even opens his mouth on a call.
+
+276
+00:32:27,262 --> 00:32:38,465
+Maya: And the daily notes pair Marcel's post with a funny post from the same night by an account called p m i t u, who has twenty-seven thousand followers.
+
+277
+00:32:38,465 --> 00:32:42,079
+Maya: His post got one thousand one hundred thirty-three likes.
+
+278
+00:32:42,079 --> 00:32:54,004
+Maya: He joked about how the X algorithm works: post random nonsense and get five hundred thousand views; share two years of pouring your heart into a real product and get thirty-four views!
+
+279
+00:32:54,615 --> 00:32:58,055
+Alex: Every builder on X has felt that exact pain.
+
+280
+00:32:58,055 --> 00:33:03,406
+Alex: Thirty-four views on your real work, half a million views on a joke.
+
+281
+00:33:03,814 --> 00:33:17,268
+Maya: 也就是说：在 X 上别被算法的随机流量带偏，只要把一两个真实案例讲透，让客户在通话时能脱口而出，它就会一直替你卖货。
+
+282
+00:33:17,861 --> 00:33:23,125
+Alex: For Fisher, the notes say don't write a standalone post on this.
+
+283
+00:33:23,125 --> 00:33:36,082
+Alex: Instead, use it to prioritize his own case study library: polish one or two real stories until they are ready to publish and easy for someone else to repeat in one sentence.
+
+284
+00:33:36,082 --> 00:33:40,941
+Alex: And we have a fresh reply draft for Marcel in Segment four.
+
+285
+00:33:41,517 --> 00:33:49,621
+Maya: So the takeaway is: a case study starts selling for you the moment a stranger can summarize it in one sentence on a call.
+
+286
+00:33:50,965 --> 00:33:59,397
+Maya: 一句话：一个能让人记住并复述的精品案例，顶得上十个面面俱到的普通介绍。
+
+287
+00:34:02,247 --> 00:34:07,422
+Alex: Next up is story six, about writing without sounding like a robot.
+
+288
+00:34:07,422 --> 00:34:16,479
+Alex: This comes from an account called E X M seven seven seven seven, with about one hundred fifty-two thousand followers.
+
+289
+00:34:16,995 --> 00:34:25,058
+Maya: He shared seven rules to make Claude write much more like a human, and the post picked up two hundred forty-four bookmarks.
+
+290
+00:34:25,058 --> 00:34:27,512
+Maya: Let's run through the seven rules.
+
+291
+00:34:27,884 --> 00:34:28,523
+Alex: Let's hear them.
+
+292
+00:34:29,013 --> 00:34:36,367
+Maya: Rule one: tell it to write simply. Rule two: tell it to write as little as possible.
+
+293
+00:34:36,367 --> 00:34:45,017
+Maya: Rule three: use contractions—like "don't" instead of "do not"—and small asides so it has a human voice.
+
+294
+00:34:45,017 --> 00:34:49,343
+Maya: Rule four: one idea per sentence, one sentence per line.
+
+295
+00:34:49,803 --> 00:34:56,066
+Alex: Hey, that sounds a lot like our own podcast rule! What are rules five, six, and seven?
+
+296
+00:34:56,559 --> 00:35:01,059
+Maya: Rule five: talk like you are having coffee with a good friend.
+
+297
+00:35:01,059 --> 00:35:07,059
+Maya: Rule six: don't make it write the whole article at once—go paragraph by paragraph.
+
+298
+00:35:07,059 --> 00:35:16,059
+Maya: And rule seven: at the end, have a second, different model read the draft and point out any spots a reader wouldn't understand.
+
+299
+00:35:16,692 --> 00:35:26,590
+Alex: He also had a second post saying top creators still choose Midjourney for images because it captures the vibe you want, not just technical parameters.
+
+300
+00:35:27,208 --> 00:35:31,476
+Maya: Look at how closely his writing setup matches Fisher's team.
+
+301
+00:35:31,476 --> 00:35:38,847
+Maya: First, Fisher has strict "no A I tone" rules where he lists the exact robotic phrases that are banned.
+
+302
+00:35:38,847 --> 00:35:50,099
+Maya: And second, just like rule number seven, in Fisher's team Argon writes the first draft, and a separate assistant audits and edits it before Fisher ever sees it.
+
+303
+00:35:50,671 --> 00:36:02,263
+Maya: 简单说：想去掉文案里的机器味，光说“写得像人”不够，得列出禁用的词句，再让第二个助手专门挑毛病。
+
+304
+00:36:02,834 --> 00:36:17,734
+Alex: The daily notes say skip writing a standalone post on this, and instead reply to E X M seven seven seven seven sharing how a banned-phrase list plus a second reviewing assistant works in practice.
+
+305
+00:36:18,280 --> 00:36:27,709
+Maya: So the takeaway is: pair a specific blacklist of A I phrases with a second agent whose only job is to read like a skeptical human.
+
+306
+00:36:28,978 --> 00:36:37,010
+Maya: 一句话：把禁用词列成清单，再让另一个助手专门审稿，最能治好 A I 腔。
+
+307
+00:36:39,860 --> 00:36:51,635
+Alex: That connects nicely to story eleven, a Chinese thread from an account called sujingshen, a product builder in Guangzhou with about six thousand four hundred ninety-three followers.
+
+308
+00:36:52,217 --> 00:36:59,674
+Maya: He reviewed version two of a creator platform called Tutti and gave it a score of seventy out of one hundred.
+
+309
+00:36:59,674 --> 00:37:02,869
+Maya: Then he explained where the missing thirty points are.
+
+310
+00:37:03,380 --> 00:37:05,321
+Alex: What did he think was wrong with the platform?
+
+311
+00:37:05,963 --> 00:37:10,585
+Maya: First, the page is too crowded and has no clear hierarchy.
+
+312
+00:37:10,585 --> 00:37:17,307
+Maya: He said a creator platform homepage should immediately answer three questions: What campaigns can I join?
+
+313
+00:37:17,307 --> 00:37:23,189
+Maya: What assets can I get? And is this campaign a good fit for me?
+
+314
+00:37:23,732 --> 00:37:26,786
+Alex: Clear product thinking. What were his next two points?
+
+315
+00:37:27,361 --> 00:37:30,194
+Maya: Second, the campaign rules are scattered everywhere.
+
+316
+00:37:30,194 --> 00:37:40,310
+Maya: Instead of slapping another A I chat box onto the page, they should organize the rules into a living knowledge base that grows over time.
+
+317
+00:37:40,887 --> 00:37:47,492
+Alex: Oh, I love that line: "Build a knowledge base, not another chat box." And his third point?
+
+318
+00:37:47,978 --> 00:38:06,848
+Maya: Third, when a creator submits a draft, the platform should pre-review it first: check if it violates platform rules, check if it hits any brand-sensitive timing, and suggest where it could be stronger—while following one golden rule: "Keep my voice, just catch the risks."
+
+319
+00:38:07,311 --> 00:38:20,050
+Alex: "Keep my voice, catch the risks." And "put the rules in a single knowledge base instead of making people ask a chat bot every time." That is the exact workflow Fisher built for his own content!
+
+320
+00:38:20,424 --> 00:38:34,546
+Maya: 也就是说：与其让用户每次去问聊天框，不如把规则整理成一页随手能查的知识库，并在预审时做到“保留作者口吻、只抓合规风险”。
+
+321
+00:38:35,149 --> 00:38:45,411
+Alex: The daily notes say don't write a standalone post here, and instead leave a helpful Chinese reply agreeing with the knowledge base and pre-review points.
+
+322
+00:38:46,024 --> 00:38:51,902
+Maya: So the takeaway is: a living one-page rulebook beats a chat box every single time.
+
+323
+00:38:53,198 --> 00:39:00,640
+Maya: 一句话：把规则写成一页不断更新的文档，比再加一个聊天框管用得多。
+
+324
+00:39:03,490 --> 00:39:13,205
+Alex: Now for story twelve, an important security heads-up in Chinese from dotey, based in Chicago, with about two hundred sixty thousand followers.
+
+325
+00:39:13,677 --> 00:39:18,543
+Maya: He shared an announcement that OpenCode put out on October seventeenth.
+
+326
+00:39:18,543 --> 00:39:26,063
+Maya: The night before, OpenCode had a security incident affecting one point four percent of its Console users.
+
+327
+00:39:26,696 --> 00:39:29,400
+Alex: How do you know if you are in that one point four percent?
+
+328
+00:39:30,011 --> 00:39:36,573
+Maya: According to the announcement, as dotey relays it, if you did not receive an email from them, you were not affected.
+
+329
+00:39:37,198 --> 00:39:38,872
+Alex: And what if someone did get the email?
+
+330
+00:39:39,427 --> 00:39:58,718
+Maya: Dotey noted that according to media reports quoting the email—and let's be clear, this part comes from media reports, not from OpenCode's public post—third-party A P I keys stored inside affected workspaces, such as Open A I or Anthropic keys, may have been exposed.
+
+331
+00:39:58,718 --> 00:40:05,410
+Maya: Those users need to revoke their old keys, generate new ones, and check their recent usage logs.
+
+332
+00:40:06,143 --> 00:40:18,708
+Maya: 简单说：如果之前在 OpenCode Console 里存过第三方密钥，去查一下邮箱有没有收到通知；没用过或者没收到邮件就不用管。
+
+333
+00:40:19,168 --> 00:40:32,637
+Alex: For Fisher, this is purely an operational check: if he or the team ever bound third-party provider keys inside OpenCode Console, check email; if not, skip right past it.
+
+334
+00:40:32,637 --> 00:40:35,331
+Alex: No writing or replying needed here.
+
+335
+00:40:35,787 --> 00:40:42,131
+Maya: So the takeaway is: check your inbox if you ever used OpenCode Console, and otherwise move on.
+
+336
+00:40:43,285 --> 00:40:49,818
+Maya: 一句话：用过 OpenCode Console 就查下邮箱，没用过直接略过。
+
+337
+00:40:52,668 --> 00:40:56,693
+Alex: And our final item, story thirteen, is marked borderline.
+
+338
+00:40:56,693 --> 00:41:02,507
+Alex: It's from Luke Pierce in Miami, who has about fifteen thousand followers.
+
+339
+00:41:03,007 --> 00:41:13,961
+Maya: He posted a twenty-one-minute video about adding "A I enablement" on top of existing automation or consulting services to land bigger client deals.
+
+340
+00:41:13,961 --> 00:41:17,028
+Maya: His post got two hundred twelve bookmarks.
+
+341
+00:41:17,528 --> 00:41:19,540
+Alex: Did we watch the twenty-one-minute video?
+
+342
+00:41:20,027 --> 00:41:22,156
+Maya: No, the video was not watched.
+
+343
+00:41:22,156 --> 00:41:37,060
+Maya: We only read the outline in his post: what A I enablement is, the four parts you can offer, how to bundle it into existing services, five signals on a sales call that a client needs it, and one live client example.
+
+344
+00:41:37,624 --> 00:41:39,876
+Alex: And why is this marked borderline today?
+
+345
+00:41:40,333 --> 00:41:44,962
+Maya: Because it would only matter if Fisher sells consulting services in the future.
+
+346
+00:41:44,962 --> 00:41:50,659
+Maya: Right now, it's borderline, so the daily notes say skip it for writing and replying.
+
+347
+00:41:51,227 --> 00:41:53,834
+Alex: So the takeaway is: skip this one.
+
+348
+00:41:54,776 --> 00:42:01,488
+Maya: 一句话：目前不卖这类咨询服务，第 13 条擦边内容直接跳过。
+
+349
+00:42:04,338 --> 00:42:07,831
+Alex: Segment four. What Fisher could post and reply today.
+
+350
+00:42:08,417 --> 00:42:12,168
+Maya: Let's start with today's single original post draft.
+
+351
+00:42:12,168 --> 00:42:31,675
+Maya: It combines library item E V oh eight—how Fisher's A I assistants divide up work—with rule D R oh five, where every file has one writer and no reply from Fisher is not a yes, plus the hard rule that assistants only write drafts and Fisher sends everything himself.
+
+352
+00:42:32,129 --> 00:42:40,882
+Alex: It was sparked by Story three—Eric Siu's outreach bot—but it doesn't mention Eric and stands completely on its own.
+
+353
+00:42:40,882 --> 00:42:43,926
+Alex: Here is the full draft, word for word:
+
+354
+00:42:44,438 --> 00:42:48,315
+Maya: "My A I assistants write drafts for me every day.
+
+355
+00:42:48,315 --> 00:42:52,192
+Maya: None of them has ever sent anything on its own.
+
+356
+00:42:52,192 --> 00:42:55,682
+Maya: One finds information, one writes, another checks the work.
+
+357
+00:42:55,682 --> 00:43:02,661
+Maya: But none of them is allowed to press send. Not for posts, not for replies, not for emails.
+
+358
+00:43:02,661 --> 00:43:08,476
+Maya: And if I don't answer, that is not a yes. The reason is simple.
+
+359
+00:43:08,476 --> 00:43:13,517
+Maya: Everything goes out under my name. A bad draft is cheap to fix.
+
+360
+00:43:13,517 --> 00:43:16,618
+Maya: A sent message can't be taken back."
+
+361
+00:43:17,256 --> 00:43:30,873
+Alex: And if Fisher prefers a shorter, punchier version, here is the backup draft in the notes: "My A I assistants write and check drafts every day, but none of them is allowed to press send.
+
+362
+00:43:30,873 --> 00:43:36,319
+Alex: Everything goes out under my name, and a bad draft is cheap to fix.
+
+363
+00:43:36,319 --> 00:43:39,432
+Alex: A sent message can't be taken back."
+
+364
+00:43:39,989 --> 00:43:47,104
+Maya: Now, let's highlight the three things marked with a warning sign in today's notes that Fisher must confirm before sending.
+
+365
+00:43:47,717 --> 00:43:52,137
+Alex: Confirmation number one is right there in the original post draft.
+
+366
+00:43:52,137 --> 00:44:10,623
+Alex: Look at the second sentence: "None of them has ever sent anything on its own." Fisher needs to confirm that up to today, no assistant has ever sent an external post, reply, or email on his behalf—messages sent internally to Fisher himself don't count.
+
+367
+00:44:11,205 --> 00:44:23,607
+Maya: If there has ever been an exception, he should delete that second sentence in the first paragraph—or use the shorter backup version—so it only says "none of them is allowed to press send."
+
+368
+00:44:24,179 --> 00:44:37,056
+Alex: Also note: because this original post is on the exact same topic as Eric Siu's post in Story three, Fisher should pick either publishing this original post or replying to Eric Siu, not both.
+
+369
+00:44:37,545 --> 00:44:39,326
+Maya: What is confirmation number two?
+
+370
+00:44:39,890 --> 00:44:53,964
+Alex: Confirmation number two is in reply draft number four, to j s p u j j i, who has one hundred eighty-two thousand followers, about travel sites being in the loser column of the agent internet.
+
+371
+00:44:53,964 --> 00:45:00,050
+Alex: The draft reads: "I run a small travel site, so I'm in your loser column.
+
+372
+00:45:00,050 --> 00:45:03,473
+Alex: My bet is the comparison part gets eaten first.
+
+373
+00:45:03,473 --> 00:45:10,320
+Alex: Local info that someone actually checked, with a date on it, is harder for an agent to replace."
+
+374
+00:45:10,778 --> 00:45:13,139
+Maya: Why is there a warning sign on that one?
+
+375
+00:45:13,749 --> 00:45:22,298
+Alex: Because library item D R oh six has a caution note about linking Fisher's X account too obviously to YouChina.
+
+376
+00:45:22,298 --> 00:45:32,068
+Alex: Even though the draft doesn't name YouChina, saying "I run a small travel site" makes it easy for people to connect the dots.
+
+377
+00:45:32,068 --> 00:45:41,431
+Alex: If Fisher minds that, he should delete the first sentence and start straight with: "My bet is the comparison part gets eaten first."
+
+378
+00:45:42,073 --> 00:45:44,774
+Maya: And what is confirmation number three?
+
+379
+00:45:45,395 --> 00:46:02,675
+Alex: Confirmation number three is in reply draft number nine, to m v r c k h c k r, the small account with three hundred forty-two followers, about whether a rule added after a mistake answers the next problem or only the last one.
+
+380
+00:46:02,675 --> 00:46:15,346
+Alex: The draft reads: "Most rules I gave my A I assistants came right after a mistake, like 'every document has one writer' and 'no reply from me is not a yes.' Good question.
+
+381
+00:46:15,346 --> 00:46:21,490
+Alex: I'm going to go through them and see which ones only answer the last mistake."
+
+382
+00:46:21,950 --> 00:46:26,947
+Maya: Fisher needs to confirm that he actually intends to go through his rules and check them.
+
+383
+00:46:26,947 --> 00:46:33,504
+Maya: If he doesn't plan to do that, just delete that last sentence so he isn't making a hollow promise.
+
+384
+00:46:34,022 --> 00:46:39,663
+Alex: Now let's quickly walk through the rest of the ten reply drafts, ordered by follower count.
+
+385
+00:46:40,176 --> 00:47:06,515
+Maya: Reply one is to t h s o t t i a u x, eight hundred eighty-six thousand followers, on his work and personal agents coordinating taxes over email: using E V oh eight, saying Fisher's assistants also talk in writing through a shared log and a ticket board so every step leaves a record, and the one step he keeps for himself is pressing send to a real person.
+
+386
+00:47:06,988 --> 00:47:27,805
+Alex: Reply two is to François Chollet, seven hundred forty-eight thousand followers, on software profits not moving when agents write the code: using W M P five c, saying it's the same in growth—when A I makes pages and content cheap, the bottleneck moves to distribution and trust.
+
+387
+00:47:27,805 --> 00:47:34,744
+Alex: Making more is easy; getting the right people to find it and believe it is still hard.
+
+388
+00:47:35,319 --> 00:48:04,226
+Maya: Reply three is to Peter Yang, two hundred eighty-eight thousand followers, on agents becoming the main users of software: using E V oh two without numbers or rankings, saying if agents become the main users, pages have to work for a reader that only wants facts; on his new site with no ads, A I assistants are already one of the top traffic sources, and the pages they quote are the ones where each section answers one small question.
+
+389
+00:48:04,836 --> 00:48:37,106
+Alex: After j s p u j j i at number four, reply five is to heynavtoor, one hundred fifty-two thousand followers, on the study showing Google A I Overviews get one in nine claims wrong: using D R oh three and D R oh seven, saying being quoted by A I is not the same as being quoted right; on his site every page ends with the official source and the date he checked it, because if a key fact is easy to check, it is harder to get wrong.
+
+390
+00:48:37,619 --> 00:49:01,924
+Maya: Reply six is to E X M seven seven seven seven, one hundred fifty-two thousand followers, on the seven rules for human-sounding Claude writing: saying "don't sound like A I" alone never worked for him, listing the exact banned phrases worked much better, and just like rule seven, one assistant writes and a different one checks before it gets to him.
+
+391
+00:49:02,546 --> 00:49:23,471
+Alex: Reply seven is to Marcel Kargul, sixty thousand followers, on his sideshift case study bringing in deals for ten months: saying from the growth side, a case study starts selling when people can retell it in one sentence, and one case people remember on a call does more than ten vague ones on a website.
+
+392
+00:49:24,080 --> 00:49:50,442
+Maya: Reply eight is to Alice Ercolani, one thousand three hundred sixty-three followers, on post seventeen of her Cal A I teardown about delaying signup until after the paywall: connecting to W M P four b without personal numbers, saying it's a classic growth idea in a new product—ask for the signup after people have seen the value, because signup is where people leave.
+
+393
+00:49:50,918 --> 00:50:20,373
+Alex: After m v r c k h c k r at number nine, reply ten is in Chinese, to sujingshen, six thousand four hundred ninety-three followers, on his Tutti version two review: agreeing with his knowledge base point, saying from his own experience, writing rules onto a single page and adding to it when new issues happen works much better than asking a bot every time, and praising the line "keep my voice, just catch the risks."
+
+394
+00:50:20,977 --> 00:50:42,863
+Maya: 今天的待办：发帖和回复前先确认三件事——第一，之前是不是确实没有任何助手替你对外发过消息；第二，回第 4 条时介不介意提“自己做小旅游站”；第三，回第 9 条时打不打算真去过一遍现有的规矩。
+
+395
+00:50:42,863 --> 00:50:46,655
+Maya: 确认好之后，再由你自己动手发送。
+
+396
+00:50:47,282 --> 00:50:55,932
+Alex: So the takeaway is: check those three details, pick the drafts that feel hundred-percent true to you, and hit send yourself.
+
+397
+00:50:56,878 --> 00:51:03,442
+Maya: 一句话：核对好三处细节，挑最顺眼的草稿由你自己发出去。
+
+398
+00:51:06,292 --> 00:51:11,618
+Alex: That's it for today. Let's state clearly: nothing was posted or sent.
+
+399
+00:51:11,618 --> 00:51:18,084
+Alex: All of the posts and replies we talked about today are drafts, and Fisher sends them himself.
+
+400
+00:51:18,649 --> 00:51:24,207
+Maya: Also, this episode is audio only. It was not published to the podcast feed.
+
+401
+00:51:24,610 --> 00:51:25,778
+Alex: I'm Alex.
+
+402
+00:51:26,177 --> 00:51:27,476
+Maya: And I'm Maya.
+
+403
+00:51:27,946 --> 00:51:31,536
+Alex: Thanks for listening to The Daily Signal. See you tomorrow.
+
+404
+00:51:31,942 --> 00:51:32,893
+Maya: 明天见。
+

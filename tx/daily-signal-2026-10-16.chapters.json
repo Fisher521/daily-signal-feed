@@ -1,0 +1,102 @@
+{
+ "version": "1.2.0",
+ "chapters": [
+  {
+   "startTime": 0.0,
+   "title": "Cold open",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-16/00.jpg"
+  },
+  {
+   "startTime": 28.85,
+   "title": "Intro",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-16/01.jpg"
+  },
+  {
+   "startTime": 90.43,
+   "title": "Segment 1 — Top stories: agent memory and standards",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-16/02.jpg",
+   "url": "https://x.com/kloss_xyz/status/2110809174024060936"
+  },
+  {
+   "startTime": 241.77,
+   "title": "①③ Eric Siu：「我用 AI 守住标准，而不是多产出」",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-16/03.jpg",
+   "url": "https://x.com/ericosiu/status/2110807988575343100"
+  },
+  {
+   "startTime": 355.93,
+   "title": "Segment 2 — Build and design",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-16/04.jpg",
+   "url": "https://x.com/shannholmberg/status/2110828395865292993"
+  },
+  {
+   "startTime": 492.46,
+   "title": "①③ 「2010 年代的实习生」= 今天没人管的编程 Agent",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-16/05.jpg",
+   "url": "https://x.com/staysaasy/status/2110783713956999560"
+  },
+  {
+   "startTime": 578.27,
+   "title": "③ 个人 Agent：最后是一个对话框，还是好几个 Agent？",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-16/06.jpg",
+   "url": "https://x.com/bentossell/status/2110848057072046197"
+  },
+  {
+   "startTime": 625.61,
+   "title": "Break",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-16/07.jpg"
+  },
+  {
+   "startTime": 642.36,
+   "title": "Segment 3 — Growth and search",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-16/08.jpg",
+   "url": "https://x.com/lilyraynyc/status/2110814054633578871"
+  },
+  {
+   "startTime": 760.29,
+   "title": "① 排名追踪坏了（Poisoned SERPs），有人用 MCP + Claude…",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-16/09.jpg",
+   "url": "https://x.com/brodieseo/status/2110799125822275699"
+  },
+  {
+   "startTime": 833.15,
+   "title": "①② 「先学你写过的所有东西，再做成写作技能」：Greg Isenberg 的…",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-16/10.jpg",
+   "url": "https://x.com/gregisenberg/status/2110870855378952314"
+  },
+  {
+   "startTime": 916.87,
+   "title": "①③ 网站变成对话？用户其实只想看自己的预约号",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-16/11.jpg",
+   "url": "https://x.com/pmitu/status/2110794025964028015"
+  },
+  {
+   "startTime": 992.12,
+   "title": "Segment 4 — Quick hits",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-16/12.jpg",
+   "url": "https://x.com/ClaudeDevs/status/2110866210573386065"
+  },
+  {
+   "startTime": 1041.19,
+   "title": "① (borderline) 卖数据给 AI 公司：Labs 买的是工作流，不是文件",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-16/13.jpg",
+   "url": "https://x.com/troyaitken_/status/2110797903988216255"
+  },
+  {
+   "startTime": 1089.26,
+   "title": "(borderline) 「我的 Bot 一周自己赚了钱」：模板免费送",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-16/14.jpg",
+   "url": "https://x.com/AlexFinn/status/2110851435223285909"
+  },
+  {
+   "startTime": 1125.33,
+   "title": "Segment 5 — What to post and reply",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-16/15.jpg"
+  },
+  {
+   "startTime": 1231.21,
+   "title": "Sign-off",
+   "img": "/lxVw7e6Vy6Iy1lAI7XHGxofA/ch/daily-signal-2026-10-16/16.jpg"
+  }
+ ]
+}

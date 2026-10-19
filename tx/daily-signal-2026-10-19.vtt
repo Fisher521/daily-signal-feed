@@ -1,0 +1,1630 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:08.263
+<v Alex>Imagine an A I agent visits an airline website or an online store to buy something for you, and the website blocks it.
+
+2
+00:00:08.838 --> 00:00:13.227
+<v Maya>Why would a business block a customer that is literally trying to spend money?
+
+3
+00:00:13.856 --> 00:00:17.205
+<v Alex>Because an A I agent doesn't look at banner ads.
+
+4
+00:00:17.205 --> 00:00:20.249
+<v Alex>It doesn't fall for extra add-ons at checkout.
+
+5
+00:00:20.854 --> 00:00:26.971
+<v Maya>Greg Isenberg says big companies like Delta, Chase, and Amazon are blocking A I agents.
+
+6
+00:00:26.971 --> 00:00:29.418
+<v Maya>We have not checked that claim.
+
+7
+00:00:29.418 --> 00:00:38.388
+<v Maya>He also mapped out a nine-stage war over how the internet will fight back, adapt, and eventually optimize for machine buyers.
+
+8
+00:00:38.884 --> 00:00:52.870
+<v Alex>Today we look at whether you should block A I agents or welcome them, why every A I model seems to have its own visual style, and how the Claude Code team turns repeated review notes into permanent rules.
+
+9
+00:01:01.970 --> 00:01:08.310
+<v Alex>Welcome to The Daily Signal. Your daily download on A I, growth, and building things.
+
+10
+00:01:08.920 --> 00:01:10.088
+<v Alex>I'm Alex.
+
+11
+00:01:10.713 --> 00:01:16.100
+<v Maya>And I'm Maya. It's Monday, October nineteenth, twenty twenty-six.
+
+12
+00:01:16.551 --> 00:01:17.484
+<v Alex>Happy Monday, Fisher.
+
+13
+00:01:17.484 --> 00:01:24.015
+<v Alex>Before we jump into the stories, let's do our quick daily note on how today's X feed was read.
+
+14
+00:01:24.629 --> 00:01:30.645
+<v Maya>Everything in today's show comes from Fisher's personal X home timeline.
+
+15
+00:01:30.645 --> 00:01:36.661
+<v Maya>Specifically, the chronological Following feed, read through his connected account, hawking five twenty.
+
+16
+00:01:37.271 --> 00:01:43.854
+<v Alex>Following the daily rule, it was read just once early this morning around six thirteen a.m.
+
+17
+00:01:43.854 --> 00:01:48.501
+<v Alex>Beijing time, triggered by the six oh seven a.m. scheduled task.
+
+18
+00:01:48.501 --> 00:01:55.084
+<v Alex>We read two pages, which came to one hundred ninety-eight posts, covering from six p.m.
+
+19
+00:01:55.084 --> 00:01:59.732
+<v Alex>yesterday evening to six oh five a.m. this morning, Beijing time.
+
+20
+00:02:00.275 --> 00:02:05.095
+<v Maya>That means posts from about six thirteen a.m. to six p.m.
+
+21
+00:02:05.095 --> 00:02:10.286
+<v Maya>yesterday, Beijing time, were not read. We didn't flip to a third page.
+
+22
+00:02:10.286 --> 00:02:19.185
+<v Maya>The two-page read cost ninety-nine cents, leaving an A P I balance of one hundred sixty-eight dollars and forty-two cents.
+
+23
+00:02:19.695 --> 00:02:23.109
+<v Alex>And as always, it was strictly read-only.
+
+24
+00:02:23.109 --> 00:02:26.523
+<v Alex>Nothing was liked, replied to, reposted, or followed.
+
+25
+00:02:26.523 --> 00:02:31.643
+<v Alex>We didn't open a browser, and Xiaohongshu was not opened either.
+
+26
+00:02:32.149 --> 00:02:38.388
+<v Maya>We also filtered out a lot of noise from those one hundred ninety-eight posts.
+
+27
+00:02:38.388 --> 00:02:47.124
+<v Maya>That includes Elon Musk's posts on cars, rockets, robots and politics, promotions for many tools, and some arguments and reposts.
+
+28
+00:02:47.625 --> 00:02:58.430
+<v Alex>We also skipped posts that were too technical, personal life posts, "which model is better" polls, and reposts of yesterday's stories from heynavtoor and Eric Siu.
+
+29
+00:02:58.969 --> 00:03:04.963
+<v Maya>That leaves us with thirteen clean items today, including one borderline item at the end.
+
+30
+00:03:05.514 --> 00:03:08.237
+<v Alex>Here's what's coming today. One.
+
+31
+00:03:08.237 --> 00:03:18.740
+<v Alex>Greg Isenberg's nine-stage forecast on the coming A I agent war, plus how e-commerce product feeds and vendor disclaimers are shaping A I search.
+
+32
+00:03:19.301 --> 00:03:19.721
+<v Maya>Two.
+
+33
+00:03:19.721 --> 00:03:35.408
+<v Maya>Why Stripe's Chief Design Officer warns that A I pulls everything toward the average, how DesignArena mapped the exact color palettes of major models, and how Eric Siu and the Claude Code team write handoff points and review rules.
+
+34
+00:03:36.057 --> 00:03:36.491
+<v Alex>Three.
+
+35
+00:03:36.491 --> 00:03:55.510
+<v Alex>How to test a new model on your own real tasks instead of looking at benchmarks, a fifteen-step one-prompt video edit, why borrowing old ideas from other industries works so well, and two Chinese threads on S E O automation and splash-screen ad metrics.
+
+36
+00:03:56.119 --> 00:04:09.420
+<v Maya>简单说：今天聊网站该拦 Agent 还是迎 Agent、怎么用规矩对抗 A I 的“平均值长相”，以及怎么把同一个纠偏写进永久规则。
+
+37
+00:04:11.470 --> 00:04:13.537
+<v Alex>Segment one. Top stories.
+
+38
+00:04:14.111 --> 00:04:21.512
+<v Maya>Our first story is the centerpiece of today's show and the inspiration for Fisher's original post draft.
+
+39
+00:04:21.512 --> 00:04:27.745
+<v Maya>It comes from Greg Isenberg, who has about seven hundred forty-three thousand followers on X.
+
+40
+00:04:27.745 --> 00:04:33.587
+<v Maya>His post picked up six hundred ninety-two likes and four hundred twenty-four bookmarks.
+
+41
+00:04:34.235 --> 00:04:40.852
+<v Alex>He opened with a bold claim: Delta, Chase, and Amazon are blocking A I agents.
+
+42
+00:04:40.852 --> 00:04:52.321
+<v Alex>Now let's be completely upfront: whether those three companies are actively blocking agents comes strictly from his post—we have not independently verified that fact.
+
+43
+00:04:52.321 --> 00:04:58.055
+<v Alex>And what follows in his post is his own forecast, not empirical data.
+
+44
+00:04:58.548 --> 00:04:58.958
+<v Maya>Right.
+
+45
+00:04:58.958 --> 00:05:06.597
+<v Maya>Based on that premise, Greg laid out nine stages of how the "Agent War" will play out across the internet.
+
+46
+00:05:06.597 --> 00:05:10.416
+<v Maya>Let's walk through all nine stages step by step.
+
+47
+00:05:10.898 --> 00:05:15.249
+<v Alex>Stage one: companies block A I agents. Why?
+
+48
+00:05:15.249 --> 00:05:21.230
+<v Alex>Because agents skip right past display ads and ignore checkout upsells.
+
+49
+00:05:21.803 --> 00:05:29.528
+<v Maya>Stage two: agents learn to disguise themselves as human users, turning the whole thing into an arms race.
+
+50
+00:05:29.987 --> 00:05:32.168
+<v Alex>Stage three: the market splits.
+
+51
+00:05:32.168 --> 00:05:36.967
+<v Alex>Companies that make money by actually selling goods let agents in.
+
+52
+00:05:36.967 --> 00:05:40.893
+<v Alex>Companies that make money from data start charging fees.
+
+53
+00:05:40.893 --> 00:05:44.384
+<v Alex>And the tech giants build their own agents.
+
+54
+00:05:44.841 --> 00:05:51.139
+<v Maya>Stage four: a trusted middle layer emerges for agent identity and agent payments.
+
+55
+00:05:51.692 --> 00:05:58.589
+<v Alex>Stage five: companies that welcome agents start stealing customers away from the companies that block them.
+
+56
+00:05:59.132 --> 00:06:07.080
+<v Maya>Stage six: the blockers realize they are losing business, so they turn around and let agents in—on their own terms.
+
+57
+00:06:07.714 --> 00:06:13.608
+<v Alex>And look closely at stages seven, eight, and nine. What happens in stage seven?
+
+58
+00:06:14.184 --> 00:06:28.915
+<v Maya>Stage seven: everyone starts competing specifically for agents—competing on price, competing on checkout speed, and doing S E O—search engine optimization—specifically for A I agents.
+
+59
+00:06:29.468 --> 00:06:36.857
+<v Alex>Stage eight: advertising comes back, as merchants pay money to become your agent's number-one recommendation.
+
+60
+00:06:36.857 --> 00:06:45.115
+<v Alex>And stage nine: selling to an A I agent becomes just as normal and routine as having a website.
+
+61
+00:06:45.664 --> 00:06:58.223
+<v Maya>也就是说：大公司一开始可能会拦 Agent，但最后大家还是得回头做“给 Agent 看的 S E O”，让机器能顺畅地读懂你的页面。
+
+62
+00:06:58.723 --> 00:07:03.695
+<v Alex>Why do stages seven and eight matter so much to Fisher right now?
+
+63
+00:07:04.147 --> 00:07:13.698
+<v Maya>Because Fisher's entire starting point with G E O—Generative Engine Optimization—is making sure machines can clearly read and understand his pages first.
+
+64
+00:07:13.698 --> 00:07:24.394
+<v Maya>What Greg describes in stages seven and eight is the exact game Fisher is already playing, and it means that lane is going to get much more crowded.
+
+65
+00:07:24.883 --> 00:07:28.965
+<v Alex>So you don't need to wait for stage seven to arrive.
+
+66
+00:07:28.965 --> 00:07:38.491
+<v Alex>Before a website owner even worries about whether to block agents or welcome them, the first job is making sure an agent can read the page without guessing.
+
+67
+00:07:39.079 --> 00:07:57.572
+<v Maya>That connects directly to Fisher's library item D R oh seven—the rule that A I only cites pages it dares to trust—and library item E V oh two, which notes that on his site with zero ad spend, A I assistants are already the third largest traffic source.
+
+68
+00:07:58.062 --> 00:08:14.016
+<v Alex>And remember our hard rule whenever Fisher uses E V oh two in public: only talk about the relative ranking or general standing of traffic sources, never absolute traffic numbers or percentages, and use general examples.
+
+69
+00:08:14.540 --> 00:08:36.726
+<v Maya>The daily notes recommend making this today's original post under the theme: "In the future your site will be read by agents before humans: whether you block them or welcome them, make your pages easy to read today." And if Fisher decides not to publish that as an original post, he can turn the short version into a direct reply to Greg.
+
+70
+00:08:37.177 --> 00:08:48.949
+<v Alex>So the takeaway is: whether big brands block agents today or not, you win right now by formatting your pages so an agent can grab the exact answer without guessing.
+
+71
+00:08:49.977 --> 00:09:00.868
+<v Maya>一句话：拦不拦 Agent 是以后的事，先把页面写成每一节回答一个清楚的小问题，让机器今天就能读懂。
+
+72
+00:09:02.918 --> 00:09:10.944
+<v Alex>Let's connect that right away to story six, which looks at how A I search handles commercial products and vendor recommendations.
+
+73
+00:09:10.944 --> 00:09:22.618
+<v Alex>This pairs a post from Brodie Clark in Australia, who has sixty-eight thousand followers, with a post from Lily Ray in New York, who has one hundred twenty-four thousand followers.
+
+74
+00:09:23.099 --> 00:09:29.844
+<v Maya>Brodie asked a big question: what kinds of brands are going to skyrocket inside A I search?
+
+75
+00:09:29.844 --> 00:09:32.225
+<v Maya>His answer is e-commerce brands.
+
+76
+00:09:32.729 --> 00:09:36.812
+<v Alex>Why does he think e-commerce has the biggest advantage in A I search?
+
+77
+00:09:37.439 --> 00:09:42.179
+<v Maya>Because of product feeds! A product feed is already clean, structured data.
+
+78
+00:09:42.179 --> 00:09:50.869
+<v Maya>Brodie pointed out that Google A I Mode, Chat G P T, and Bing all prefer that exact same structured data format.
+
+79
+00:09:50.869 --> 00:10:00.349
+<v Maya>Yet many e-commerce stores still haven't even submitted their product feeds through the ad backends of Chat G P T or Bing.
+
+80
+00:10:00.901 --> 00:10:06.462
+<v Alex>What about Lily Ray's post? What did she spot inside G P T six?
+
+81
+00:10:07.082 --> 00:10:27.073
+<v Maya>Lily Ray said she is seeing G P T six increasingly add disclaimers in its answers teaching users "how to select vendors." Now, she shared a screenshot from a tool called peec underscore a i, and since we did not view the image in our text read, we only know that one sentence from her post.
+
+82
+00:10:27.651 --> 00:10:30.397
+<v Alex>Put Brodie Clark and Lily Ray together.
+
+83
+00:10:30.397 --> 00:10:37.065
+<v Alex>On one side, A I search engines love fixed, structured fields that look like a product feed.
+
+84
+00:10:37.065 --> 00:10:46.088
+<v Alex>On the other side, when people ask for recommendations, G P T six is reminding them how to check and verify a vendor.
+
+85
+00:10:46.504 --> 00:11:00.591
+<v Maya>简单说：A I 搜索最喜欢字段固定的结构化信息；而当模型开始教用户“怎么挑供应商”时，谁的页面更好核实，谁就占便宜。
+
+86
+00:11:01.059 --> 00:11:10.375
+<v Alex>And how does that apply to a site that isn't a traditional e-commerce store—say, travel guides or e-S I M pages that have fixed facts?
+
+87
+00:11:10.933 --> 00:11:22.243
+<v Maya>Even if you don't have a shopping cart feed, you can put your core facts in the exact same spot on every page so a machine can read them like a feed.
+
+88
+00:11:22.243 --> 00:11:35.266
+<v Maya>And for Lily Ray's point, it maps straight to Fisher's library item D R oh three: putting how the information was verified, the official source, and the verification date at the bottom of every single page.
+
+89
+00:11:35.818 --> 00:11:40.852
+<v Alex>The daily notes say there's no need to write a standalone post here.
+
+90
+00:11:40.852 --> 00:11:53.077
+<v Alex>Instead, we have sharp reply drafts for both Lily Ray and Brodie Clark in Segment four—and since Brodie's account is a bit smaller, a reply there is more likely to be seen.
+
+91
+00:11:53.701 --> 00:12:04.582
+<v Maya>So the takeaway is: organize your recurring facts like a structured product feed, and stamp every page with its official source and verification date.
+
+92
+00:12:05.804 --> 00:12:17.482
+<v Maya>一句话：把常驻事实固定在页面同一位置，并在页底写明官方来源和核实日期，同时讨好机器和真人读者。
+
+93
+00:12:19.532 --> 00:12:26.835
+<v Alex>Now let's move to story two: why everything made by A I is starting to look identical.
+
+94
+00:12:26.835 --> 00:12:42.658
+<v Alex>This pairs a Chinese note from shao underscore underscore meng, who has thirty-six thousand followers, summarizing a talk by Stripe's Chief Design Officer, lil underscore dill, alongside a study from DesignArena, which has twenty-five thousand followers.
+
+95
+00:12:43.228 --> 00:12:49.320
+<v Maya>First, let's note our source boundary: we did not watch the video of the Stripe talk.
+
+96
+00:12:49.320 --> 00:12:54.695
+<v Maya>Everything we have comes from shao underscore underscore meng's second-hand notes on X.
+
+97
+00:12:55.156 --> 00:13:00.801
+<v Alex>According to those notes, what were the three warning signs that Stripe's design chief called out?
+
+98
+00:13:01.328 --> 00:13:06.361
+<v Maya>Warning sign one: large language models naturally pull everything toward the average.
+
+99
+00:13:06.361 --> 00:13:16.007
+<v Maya>Warning sign two: A I makes things "look finished" very quickly, but looking polished is not the same as actually solving the problem.
+
+100
+00:13:16.007 --> 00:13:24.814
+<v Maya>And warning sign three: because generating output is so easy now, nobody thinks about who is going to maintain it later.
+
+101
+00:13:25.329 --> 00:13:27.316
+<v Alex>Those three points are spot on.
+
+102
+00:13:27.316 --> 00:13:31.621
+<v Alex>What was her advice for fighting back against that pull toward the average?
+
+103
+00:13:32.101 --> 00:13:34.425
+<v Maya>She gave three pieces of advice.
+
+104
+00:13:34.425 --> 00:13:42.173
+<v Maya>First, have your own point of view before you start, otherwise the A I will hand you a generic answer.
+
+105
+00:13:42.173 --> 00:13:52.246
+<v Maya>Second, bake your quality standards directly into the tools, because today a lot of user interfaces are being generated in rooms where no designer is present.
+
+106
+00:13:52.246 --> 00:14:01.930
+<v Maya>And third, never confuse "done" with "good"—a real human still needs to walk through the whole experience from start to finish like a user.
+
+107
+00:14:02.544 --> 00:14:05.761
+<v Alex>And a post from DesignArena fits her warning well.
+
+108
+00:14:05.761 --> 00:14:10.765
+<v Alex>Their post got two hundred eighty-one likes and one hundred ninety-seven bookmarks.
+
+109
+00:14:10.765 --> 00:14:12.195
+<v Alex>What did they do?
+
+110
+00:14:12.721 --> 00:14:22.283
+<v Maya>They analyzed more than sixty-four thousand websites generated by A I models and mapped out the distinct visual style of each model!
+
+111
+00:14:22.929 --> 00:14:25.827
+<v Alex>Tell us what each model's default style looks like.
+
+112
+00:14:26.395 --> 00:14:33.894
+<v Maya>According to DesignArena, Open A I leans toward cream backgrounds paired with italic serif fonts.
+
+113
+00:14:33.894 --> 00:14:38.394
+<v Maya>Anthropic leans toward dark backgrounds with glowing purple accents.
+
+114
+00:14:38.394 --> 00:14:43.393
+<v Maya>And Google leans toward navy blue dashboards with a sidebar!
+
+115
+00:14:43.964 --> 00:14:44.414
+<v Alex>Ha!
+
+116
+00:14:44.414 --> 00:14:55.749
+<v Alex>Once you hear that—cream and italic serif for Open A I, dark glowing purple for Anthropic, navy sidebar dashboard for Google—you can never unsee it.
+
+117
+00:14:56.152 --> 00:15:10.535
+<v Maya>也就是说：每个大模型都有自己默认的“平均值长相”，不管是设计页面还是写文章，如果你不先立规矩，用户一眼就能看出是哪个模型生成的。
+
+118
+00:15:11.121 --> 00:15:14.886
+<v Alex>And look at how directly this connects to Fisher's own work.
+
+119
+00:15:14.886 --> 00:15:18.338
+<v Alex>Remember, Fisher builds with A I and does not write code.
+
+120
+00:15:18.338 --> 00:15:21.789
+<v Alex>He already has a rule for this on the writing side.
+
+121
+00:15:22.269 --> 00:15:22.716
+<v Maya>Right!
+
+122
+00:15:22.716 --> 00:15:32.300
+<v Maya>Just like Anthropic loves dark purple and Open A I loves cream serif fonts, every model has its favorite robotic phrases in writing.
+
+123
+00:15:32.300 --> 00:15:38.967
+<v Maya>If a reader spots those phrases and realizes a model wrote the page, trust drops immediately.
+
+124
+00:15:39.505 --> 00:15:56.828
+<v Alex>So for a writing angle, the daily notes suggest combining Fisher's library item D R oh five—his rules for A I assistants—with W M P six a, which covers lessons learned from running multiple A I assistants at the same time.
+
+125
+00:15:56.828 --> 00:16:02.734
+<v Alex>The theme: "A I's default look is the average; your rules are the difference."
+
+126
+00:16:03.231 --> 00:16:06.967
+<v Maya>Keep the examples general and never say Fisher writes code.
+
+127
+00:16:06.967 --> 00:16:19.293
+<v Maya>Also, the notes mention that the original video of the Stripe design talk is well worth Fisher watching when he has time, and we have a reply draft for DesignArena in Segment four.
+
+128
+00:16:19.824 --> 00:16:29.192
+<v Alex>So the takeaway is: don't let A I hand you its default average style—write your own taste and banned defaults directly into your rules.
+
+129
+00:16:30.124 --> 00:16:41.184
+<v Maya>一句话：大模型天生往平均值走，只有把你的标准和禁用项写进规矩里，做出来的东西才不会千篇一律。
+
+130
+00:16:43.234 --> 00:16:50.477
+<v Alex>Segment two. A I workflows: handoff templates, review rules, and real-task testing.
+
+131
+00:16:51.120 --> 00:16:58.917
+<v Maya>Story three is a follow-up from Eric Siu in Los Angeles, who has about forty-six thousand followers.
+
+132
+00:16:58.917 --> 00:17:05.894
+<v Maya>Yesterday we talked about his Outreach Agent that prepares email drafts every day without ever pressing send.
+
+133
+00:17:06.387 --> 00:17:09.848
+<v Alex>Today, Eric took that philosophy a step further.
+
+134
+00:17:09.848 --> 00:17:23.693
+<v Alex>He announced that his company, Single Grain, turned five of the internal bots they actually run into public templates inside Skills Dojo, and he posted a second link with all five templates.
+
+135
+00:17:24.277 --> 00:17:29.423
+<v Maya>Each template includes the bot's job description, its skills, and its daily schedule.
+
+136
+00:17:29.423 --> 00:17:37.878
+<v Maya>And Eric highlighted the single most important thing to look at in every template: "Where the bot stops, and where you take over."
+
+137
+00:17:38.388 --> 00:17:44.821
+<v Alex>Let's go through all five of his bots and see where the bot stops and where the human takes over.
+
+138
+00:17:44.821 --> 00:17:46.353
+<v Alex>What is bot number one?
+
+139
+00:17:46.978 --> 00:17:49.907
+<v Maya>Bot one is a pre-meeting intelligence bot.
+
+140
+00:17:49.907 --> 00:17:54.301
+<v Maya>It gives you a decision card and a follow-up email draft.
+
+141
+00:17:54.301 --> 00:17:57.597
+<v Maya>Whether to send that email is up to you.
+
+142
+00:17:58.179 --> 00:17:59.363
+<v Alex>What is bot number two?
+
+143
+00:17:59.839 --> 00:18:06.302
+<v Maya>Bot two is the outreach bot from yesterday: it lines up a small batch of emails every day.
+
+144
+00:18:06.302 --> 00:18:09.533
+<v Maya>Nothing goes out until you approve the whole batch.
+
+145
+00:18:09.963 --> 00:18:10.942
+<v Alex>Bot number three?
+
+146
+00:18:11.581 --> 00:18:17.731
+<v Maya>Bot three is a short-form video bot: it picks four clips from a podcast, and you choose two.
+
+147
+00:18:18.362 --> 00:18:19.859
+<v Alex>And bots four and five?
+
+148
+00:18:20.423 --> 00:18:27.438
+<v Maya>Bot four is a hiring bot: it scores job applicants, but never sends an automated reply.
+
+149
+00:18:27.438 --> 00:18:35.768
+<v Maya>And bot five is a sponsorship bot: when someone asks about pricing, it sends only one fixed first reply.
+
+150
+00:18:35.768 --> 00:18:38.837
+<v Maya>Every exception is handled by a human.
+
+151
+00:18:39.416 --> 00:18:51.271
+<v Maya>简单说：Eric Siu 把公司里用的五个 Bot 做成了模板，每个模板最核心的一栏就是写清楚“Bot 在哪一步停下、人在哪一步接手”。
+
+152
+00:18:51.760 --> 00:18:54.815
+<v Alex>Look at why that matters for Fisher.
+
+153
+00:18:54.815 --> 00:19:02.671
+<v Alex>Fisher's team already follows the exact same rule—assistants only write drafts, and Fisher presses send himself.
+
+154
+00:19:02.671 --> 00:19:10.527
+<v Alex>What Eric adds here is putting that exact handoff boundary into a clean template table for every bot.
+
+155
+00:19:11.162 --> 00:19:17.415
+<v Maya>When you have multiple bots working together, you can't rely on memory to keep the boundaries straight.
+
+156
+00:19:17.415 --> 00:19:23.321
+<v Maya>Writing down "where each bot stops" into a table or template makes the whole system much safer.
+
+157
+00:19:23.881 --> 00:19:34.832
+<v Alex>For writing, the daily notes anchor this on library item E V oh eight—Fisher's three-bot system and correction log—and rule D R oh five.
+
+158
+00:19:34.832 --> 00:19:43.437
+<v Alex>It can also serve as another clean example for version three of Fisher's C R M article, D R oh eight.
+
+159
+00:19:43.923 --> 00:19:58.471
+<v Maya>And since yesterday's original post already used the "never press send" angle, today's reply draft to Eric shifts the focus to why you have to write the handoff point into the template instead of trusting people or bots to remember it.
+
+160
+00:19:59.097 --> 00:20:07.747
+<v Alex>So the takeaway is: define every assistant's job by writing down the exact line where the bot stops and you step in.
+
+161
+00:20:08.750 --> 00:20:18.694
+<v Maya>一句话：用多个助手干活时，不能光靠脑子记，要把每个助手“在哪一步停下”白纸黑字写进模板里。
+
+162
+00:20:20.744 --> 00:20:29.569
+<v Alex>That brings us right into story four: how the Claude Code team reviews A I-written work and turns mistakes into rules.
+
+163
+00:20:29.569 --> 00:20:37.591
+<v Alex>This comes from Prajwal Tomar, who has about fifty-seven thousand followers, summarizing an article from the Claude Code team.
+
+164
+00:20:38.155 --> 00:20:43.818
+<v Maya>Let's state our source rule first: we did not read the original Claude Code article.
+
+165
+00:20:43.818 --> 00:20:48.773
+<v Maya>All the numbers and practices here come from Prajwal's summary post on X.
+
+166
+00:20:49.299 --> 00:20:51.393
+<v Alex>What numbers did he share from their summary?
+
+167
+00:20:51.925 --> 00:21:00.713
+<v Maya>According to his post, Claude now writes about ninety percent of their code, and they no longer review every single line by hand.
+
+168
+00:21:00.713 --> 00:21:12.940
+<v Maya>Between June and September, the number of changes they shipped more than doubled, while their rollback rate—how often they had to undo a bad change—dropped by more than forty percent!
+
+169
+00:21:13.438 --> 00:21:19.186
+<v Alex>More changes, fewer rollbacks, and no line-by-line review. How did they do it?
+
+170
+00:21:19.643 --> 00:21:21.914
+<v Maya>He listed five specific practices.
+
+171
+00:21:21.914 --> 00:21:28.725
+<v Maya>Practice one: before submitting a change, have a second assistant review it with fresh eyes.
+
+172
+00:21:29.351 --> 00:21:31.510
+<v Alex>Okay. What is practice two?
+
+173
+00:21:32.053 --> 00:21:41.380
+<v Maya>Practice two: if the exact same review comment is given twice, write it into a permanent REVIEW file so the next review checks for it automatically.
+
+174
+00:21:41.939 --> 00:21:47.187
+<v Alex>Say a correction twice, and it becomes a written rule in the review file.
+
+175
+00:21:47.187 --> 00:21:49.811
+<v Alex>What are practices three, four, and five?
+
+176
+00:21:50.325 --> 00:21:59.269
+<v Maya>Practice three: check small, low-risk changes quickly, and spend deep review time on changes where a mistake would cost money.
+
+177
+00:21:59.269 --> 00:22:11.194
+<v Maya>Practice four: anything touching login, payments, or public release must always be approved by a human—a bot's approval can never replace a human's approval there.
+
+178
+00:22:11.194 --> 00:22:22.267
+<v Maya>And practice five: put new changes behind a feature toggle to test internally first, roll them out gradually, and always keep a one-step rollback ready.
+
+179
+00:22:22.968 --> 00:22:37.335
+<v Maya>也就是说：同一条审查意见只要说了两次，就立刻写进规则文件下次自动查；而凡是涉及花钱和对外发布的事，永远必须由真人批准。
+
+180
+00:22:37.790 --> 00:22:46.412
+<v Alex>Now remember our hard rule: Fisher does not write code, and we never touch code details when Fisher writes or replies.
+
+181
+00:22:46.412 --> 00:22:49.697
+<v Alex>Why is this story still useful for Fisher?
+
+182
+00:22:50.221 --> 00:23:09.642
+<v Maya>Because the two rules that have nothing to do with code—"if you say the same feedback twice, write it into the rule file" and "anything that costs money or goes public requires human approval"—are the exact way Fisher builds his own rules folder in library item D R oh five and E V oh eight!
+
+183
+00:23:10.098 --> 00:23:35.819
+<v Alex>For a writing angle, the daily notes suggest using D R oh five and E V oh eight around the theme: "How I set rules for my A I assistants: if I have to correct the same mistake twice, it becomes a written rule." And we have a reply draft to Prajwal in Segment four that focuses strictly on the non-code rule-making side.
+
+184
+00:23:36.293 --> 00:23:46.373
+<v Maya>So the takeaway is: never repeat the same correction three times—the second time a bot makes the same mistake, lock the fix into its checklist.
+
+185
+00:23:47.717 --> 00:23:57.321
+<v Maya>一句话：同一个错只要纠正了两次，就把它写成书面规矩，下次让审核助手自动对照检查。
+
+186
+00:23:59.371 --> 00:24:08.882
+<v Alex>Next up is story five, from E X M seven seven seven seven, who has about one hundred fifty-three thousand followers.
+
+187
+00:24:08.882 --> 00:24:14.503
+<v Alex>Yesterday we covered his seven rules for making Claude write like a human.
+
+188
+00:24:14.503 --> 00:24:17.530
+<v Alex>Today he posted two more workflow gems.
+
+189
+00:24:18.111 --> 00:24:27.192
+<v Maya>In his first post, he talked about how every single week there is a brand-new "frontier model" release, and everyone obsesses over benchmark scores.
+
+190
+00:24:27.192 --> 00:24:33.730
+<v Maya>He said the only thing that actually matters is how the model fits into your own real work.
+
+191
+00:24:34.266 --> 00:24:37.676
+<v Alex>How does he test whether a new model is worth switching to?
+
+192
+00:24:38.231 --> 00:24:44.548
+<v Maya>He uses a simple three-step test. First: throw your own real daily tasks at it.
+
+193
+00:24:44.548 --> 00:24:52.443
+<v Maya>Second: look for three to five specific places where it is noticeably better than the model you use right now.
+
+194
+00:24:52.443 --> 00:24:59.549
+<v Maya>And third: keep pushing it harder and harder until it breaks, so you know where its ceiling is.
+
+195
+00:25:00.174 --> 00:25:01.842
+<v Alex>And what was in his second post?
+
+196
+00:25:02.361 --> 00:25:10.988
+<v Maya>He shared a workflow audit prompt—a prompt that tells the A I assistant to interview you about how you work before it suggests any automation.
+
+197
+00:25:10.988 --> 00:25:20.941
+<v Maya>And look at the constraint he put inside the prompt: "Ask only two to three questions at a time, and do not move to the next step until I confirm."
+
+198
+00:25:21.509 --> 00:25:29.469
+<v Alex>There is that human-in-the-loop pattern again: ask two or three questions, wait for my confirmation, then proceed.
+
+199
+00:25:29.469 --> 00:25:35.438
+<v Alex>And look at his first post about testing models on real tasks instead of benchmarks.
+
+200
+00:25:36.025 --> 00:25:51.510
+<v Maya>That is practically the exact answer to Fisher's library item W M P six b—how to judge whether a new A I tool is worth your time—and library item X oh seven, which is about assigning different models by task complexity!
+
+201
+00:25:52.031 --> 00:25:52.460
+<v Alex>Right!
+
+202
+00:25:52.460 --> 00:26:02.065
+<v Alex>In Fisher's setup, as documented in his model routing rules from October sixteenth, Argon writes the drafts while Grok reads X and searches.
+
+203
+00:26:02.065 --> 00:26:13.672
+<v Alex>That split wasn't decided by reading public benchmark charts—it came from running them on Fisher's actual daily tasks and seeing which one did each job better.
+
+204
+00:26:14.059 --> 00:26:25.880
+<v Maya>简单说：新模型值不值得换，别看网上的跑分榜，直接拿自己每天干的真活去试，按实际表现给不同模型分工。
+
+205
+00:26:26.483 --> 00:26:44.691
+<v Alex>The daily notes mark this as today's backup idea for an original post: "I don't look at benchmarks; I look at which specific task it does better than what I have now." And we also have a direct reply draft to E X M seven seven seven seven in Segment four.
+
+206
+00:26:45.323 --> 00:26:53.550
+<v Maya>So the takeaway is: ignore the weekly benchmark hype and assign models to jobs based on testing them on your own daily work.
+
+207
+00:26:54.730 --> 00:27:04.770
+<v Maya>一句话：别看跑分看疗效，拿自己的日常任务去实测，哪个模型在哪件活上更强就让它干哪件。
+
+208
+00:27:06.820 --> 00:27:17.442
+<v Alex>Let's close out Segment two with story eleven, a Chinese post from Shanghai by an account called vikingmute, who has about sixty-nine thousand followers.
+
+209
+00:27:18.079 --> 00:27:32.953
+<v Maya>He posted that he connected a third-party M C P—Model Context Protocol connector—for Google Search Console to his Grok Bot, and handed total control of his website's S E O over to the bot!
+
+210
+00:27:33.404 --> 00:27:36.798
+<v Alex>Wait—total control? What did he tell the bot to do?
+
+211
+00:27:37.399 --> 00:27:48.111
+<v Maya>He set it up on a weekly schedule to observe the search data, spot changes, make a plan, modify the pages, and push the changes live to the website.
+
+212
+00:27:48.111 --> 00:28:03.627
+<v Maya>In his words, roughly: "Just tell me after it's live." He also noted that a Google Search Console connector is a very practical need, and even though there is no official version yet, there are already plenty of third-party options.
+
+213
+00:28:03.627 --> 00:28:05.843
+<v Maya>His post got twenty-one bookmarks.
+
+214
+00:28:06.455 --> 00:28:07.899
+<v Alex>Okay, pause right there!
+
+215
+00:28:07.899 --> 00:28:16.921
+<v Alex>"Modify the pages, push them live, and just tell me after it's done." That is the exact opposite of how Fisher runs his team.
+
+216
+00:28:17.398 --> 00:28:18.582
+<v Maya>It really is!
+
+217
+00:28:18.582 --> 00:28:26.475
+<v Maya>Now, having a bot automatically pull Google Search Console data every week, watch for changes, and draft an action plan?
+
+218
+00:28:26.475 --> 00:28:32.789
+<v Maya>That part is super useful for Fisher's G E O and S E O work.
+
+219
+00:28:33.323 --> 00:28:37.571
+<v Alex>Totally. Automating data observation saves a ton of time.
+
+220
+00:28:37.571 --> 00:28:41.819
+<v Alex>Where do Fisher and vikingmute draw the line differently?
+
+221
+00:28:42.432 --> 00:28:46.676
+<v Maya>On pushing changes straight to a live website without a human check.
+
+222
+00:28:46.676 --> 00:28:51.982
+<v Maya>Fisher's team rule is that assistants only write drafts, and Fisher sends things himself.
+
+223
+00:28:51.982 --> 00:28:58.702
+<v Maya>Whether he also keeps a human check before live page changes is one of today's things to confirm.
+
+224
+00:28:58.702 --> 00:29:01.885
+<v Maya>We'll come back to it in segment four.
+
+225
+00:29:02.438 --> 00:29:15.039
+<v Maya>也就是说：让 Bot 每周自动看 Search Console 数据、出计划非常省心，但直接修改上线这一步，留一道真人把关会踏实得多。
+
+226
+00:29:15.615 --> 00:29:31.141
+<v Alex>The daily notes say no standalone post is needed here, and instead recommend using today's one daily Chinese reply slot to chat constructively with vikingmute about where each person draws that boundary.
+
+227
+00:29:31.750 --> 00:29:40.856
+<v Maya>So the takeaway is: let bots automate all the search data monitoring you want, and keep a human check right before live pages change.
+
+228
+00:29:42.108 --> 00:29:50.028
+<v Maya>一句话：数据观察和出方案可以全自动，改线上页面留一步人看最稳妥。
+
+229
+00:29:52.078 --> 00:29:52.880
+<v Maya>Quick break.
+
+230
+00:29:52.880 --> 00:30:18.552
+<v Maya>When we come back: Peter Yang on X's worsening reply-bot problem and why big-company resumes can be a "car wreck" in fast teams, Riley Brown's fifteen-step video edit from a single prompt, borrowing old tricks from other industries, why nobody in tech feels optimistic despite seeing fifty huge opportunities, and the ad K P I behind annoying splash screens.
+
+231
+00:30:19.247 --> 00:30:33.344
+<v Maya>休息一下，马上回来聊怎么在满屏机器人回复里写出真人感、一句话剪完视频的十五个步骤，以及几个关于增长与行业心态的观察。
+
+232
+00:30:36.894 --> 00:30:43.467
+<v Alex>Welcome back. Segment three. Growth mindset, A I media, and quick hits.
+
+233
+00:30:43.962 --> 00:30:51.297
+<v Maya>Let's start Segment three with story seven, from Peter Yang, who has about two hundred eighty-nine thousand followers.
+
+234
+00:30:51.297 --> 00:30:54.598
+<v Maya>He had two notable posts in the feed today.
+
+235
+00:30:55.088 --> 00:30:58.195
+<v Alex>His first post got seven hundred ten likes.
+
+236
+00:30:58.195 --> 00:31:07.129
+<v Alex>He said the reply-bot problem on X has gotten noticeably worse—and Elon Musk actually replied to him saying, "Working on it."
+
+237
+00:31:07.652 --> 00:31:15.767
+<v Maya>And in his second post, Peter shared a clip from his newest podcast episode with Pomp, handle A Pompliano.
+
+238
+00:31:15.767 --> 00:31:20.038
+<v Maya>Pomp talked about hiring people with impressive big-company resumes.
+
+239
+00:31:20.524 --> 00:31:26.573
+<v Alex>How did Pomp describe hiring big-company people into a small, fast-moving team?
+
+240
+00:31:27.093 --> 00:31:29.683
+<v Maya>He said it was "like a car wreck"!
+
+241
+00:31:29.683 --> 00:31:34.864
+<v Maya>Because people from giant companies are used to having lots of resources and long, slow processes.
+
+242
+00:31:34.864 --> 00:31:39.721
+<v Maya>Then you drop them into a team that has an idea at nine a.m.
+
+243
+00:31:39.721 --> 00:31:42.312
+<v Maya>and ships it by ten thirty a.m.
+
+244
+00:31:42.312 --> 00:31:52.350
+<v Maya>Pomp also mentioned that people ask A I financial questions they are too embarrassed to ask a human financial advisor, because they aren't afraid of the A I judging them.
+
+245
+00:31:52.990 --> 00:31:58.745
+<v Alex>Let's zoom in on Peter's first post about X being flooded with reply bots.
+
+246
+00:31:58.745 --> 00:32:02.342
+<v Alex>Why does that matter directly to Fisher's daily workflow?
+
+247
+00:32:02.907 --> 00:32:09.131
+<v Maya>Because Fisher uses daily replies to build relationships and grow his presence on X!
+
+248
+00:32:09.131 --> 00:32:26.912
+<v Maya>When the platform is flooded with automated reply bots, two things happen at once: first, a thoughtful reply that sounds like a real person stands out much more; second, everyone is suspicious, so generic replies immediately get dismissed as bots.
+
+249
+00:32:27.430 --> 00:32:32.819
+<v Alex>So how do you prove in two sentences that you are a real practitioner and not a reply bot?
+
+250
+00:32:33.323 --> 00:32:42.301
+<v Maya>By including a specific, lived detail from your own work this week—something a bot could never guess or make up from reading the original post!
+
+251
+00:32:43.042 --> 00:32:55.996
+<v Maya>简单说：X 上的机器人回复越多，越不能说空话；在回复里带上一句只有你自己干过才知道的细节，比任何蓝标认证都管用。
+
+252
+00:32:56.535 --> 00:33:10.972
+<v Alex>The daily notes say skip writing a standalone post on this, read the Pomp note as background, and reply to Peter's post about reply bots—without mentioning that Fisher uses assistants to draft his replies.
+
+253
+00:33:11.618 --> 00:33:20.080
+<v Maya>So the takeaway is: beat the reply-bot noise by anchoring every reply in a real detail from what you actually built or tested.
+
+254
+00:33:21.333 --> 00:33:30.603
+<v Maya>一句话：机器人能模仿语气但编不出你这周真干了什么，真细节就是最好的真人签名。
+
+255
+00:33:32.653 --> 00:33:37.718
+<v Alex>Story eight is a wild look at where A I video editing is heading.
+
+256
+00:33:37.718 --> 00:33:46.401
+<v Alex>It comes from Riley Brown in Brooklyn, who has about two hundred fifty-seven thousand followers, paired with a quick reaction from Peter Yang.
+
+257
+00:33:46.956 --> 00:34:00.177
+<v Maya>Riley posted a video with the caption: "This video was edited with one prompt." The post got one hundred thirty-one bookmarks, and Peter Yang commented that Claude is insanely good at video editing.
+
+258
+00:34:00.806 --> 00:34:04.774
+<v Alex>Hold on—one single prompt edited the entire video?
+
+259
+00:34:04.774 --> 00:34:10.505
+<v Alex>What did the model actually do behind the scenes? Riley listed fifteen steps.
+
+260
+00:34:10.505 --> 00:34:12.268
+<v Alex>Give us the highlights!
+
+261
+00:34:12.867 --> 00:34:18.802
+<v Maya>He uploaded a raw video of himself talking, full of verbal stumbles and pauses.
+
+262
+00:34:18.802 --> 00:34:59.503
+<v Maya>From that one prompt, the model analyzed the transcript, went onto X to find matching visual assets, cut out all the stumbles and dead air, built scenes inside a Blender template, took screenshots of its own work to self-check and fix mistakes, synced the camera angles and animations to every single word, added word-by-word captions, added sound effects and music, rendered three thousand four hundred eighty-seven frames in the cloud—which he claims took under twenty minutes and cost less than one dollar—and finally uploaded the finished video to Google Drive!
+
+263
+00:35:00.069 --> 00:35:10.322
+<v Alex>Three thousand four hundred eighty-seven frames rendered in under twenty minutes for under a buck, plus self-checking its own Blender scenes via screenshots.
+
+264
+00:35:10.322 --> 00:35:13.193
+<v Alex>Did Riley post anything else last night?
+
+265
+00:35:13.728 --> 00:35:23.253
+<v Maya>Yes, he posted a short piece of advice for startups and content creators that got two hundred forty-three likes: "Don't be reverse-engineerable."
+
+266
+00:35:23.979 --> 00:35:37.880
+<v Maya>也就是说：现在已经有人用一条提示词跑完找素材、剪口误、搭场景、自查渲染的十五步视频流程，不到二十分钟就能出成片。
+
+267
+00:35:38.412 --> 00:35:40.562
+<v Alex>Why is this on Fisher's radar today?
+
+268
+00:35:41.196 --> 00:35:47.199
+<v Maya>Right now, The Daily Signal is strictly audio-only, and Fisher's other content is written articles.
+
+269
+00:35:47.199 --> 00:35:56.027
+<v Maya>If Fisher ever wants to turn the podcast or his articles into short videos later on, workflows like Riley's are already being shared openly.
+
+270
+00:35:56.027 --> 00:36:06.973
+<v Maya>Riley said he is releasing a full breakdown video later this week, so the notes say no need to write or reply—just keep an eye out for his full tutorial.
+
+271
+00:36:07.437 --> 00:36:17.616
+<v Alex>So the takeaway is: keep our focus on audio and text today, and bookmark one-prompt video workflows for when we want video distribution later.
+
+272
+00:36:18.592 --> 00:36:28.158
+<v Maya>一句话：知道一句话剪视频已经能跑通全流程就行，等他这周发完整教程再按需了解。
+
+273
+00:36:30.208 --> 00:36:37.655
+<v Alex>Now let's look at story nine, from Murat in Toronto—handle muratcan—who has about twenty-three thousand followers.
+
+274
+00:36:37.655 --> 00:36:45.102
+<v Alex>His post only had two likes when we read it, which makes it a great quiet thread for a reply.
+
+275
+00:36:45.656 --> 00:36:49.394
+<v Maya>He shared an experiment his team ran over the weekend.
+
+276
+00:36:49.394 --> 00:36:52.011
+<v Maya>They were working on A I filmmaking.
+
+277
+00:36:52.011 --> 00:36:57.244
+<v Maya>The question was how to keep characters looking the right way, with steady lighting.
+
+278
+00:36:57.884 --> 00:36:58.927
+<v Alex>How did they solve it?
+
+279
+00:36:59.427 --> 00:37:05.546
+<v Maya>They looked at how people building three-D animation engines for agents handle spatial layout.
+
+280
+00:37:05.546 --> 00:37:14.929
+<v Maya>Before generating the video scene, they had the agent draw a top-down floor plan of where everyone stands and check it first.
+
+281
+00:37:14.929 --> 00:37:21.048
+<v Maya>Eye lines, directions, and lighting came out much more stable than with text prompts alone.
+
+282
+00:37:21.659 --> 00:37:25.299
+<v Alex>And what was Murat's big lesson from that weekend experiment?
+
+283
+00:37:25.884 --> 00:37:39.505
+<v Maya>He called it "cross-profession transfer." When you are building with A I, borrowing a method that another industry already figured out is often much more effective than trying harder inside your own industry's habits.
+
+284
+00:37:40.198 --> 00:37:51.797
+<v Maya>简单说：用 A I 遇到卡点时，去借别的行业早就想明白的老办法，往往比在自己行业里死磕提示词管用得多。
+
+285
+00:37:52.373 --> 00:37:54.269
+<v Alex>And why does that matter for Fisher?
+
+286
+00:37:54.913 --> 00:37:57.940
+<v Maya>Because that is Fisher's exact signature angle!
+
+287
+00:37:57.940 --> 00:38:05.128
+<v Maya>Fisher takes growth methods from more than ten years of growth work and brings them to A I products.
+
+288
+00:38:05.645 --> 00:38:31.146
+<v Alex>For writing, the daily notes connect this to library item W M P five b—how classic Airbnb growth tactics translate to today's A I tools—with the theme: "The best methods in the A I era are often old methods from another industry." And we have a clean reply draft for Murat in Segment four using a general growth example.
+
+289
+00:38:31.676 --> 00:38:40.812
+<v Maya>So the takeaway is: don't reinvent the wheel inside A I—import proven playbooks from older fields like growth and animation.
+
+290
+00:38:42.002 --> 00:38:49.809
+<v Maya>一句话：A I 时代最好用的招数，往往是从别的行业搬过来的成熟老办法。
+
+291
+00:38:51.859 --> 00:38:57.226
+<v Alex>Story ten comes from staysaasy, an account with about seventeen thousand followers.
+
+292
+00:38:57.226 --> 00:39:03.487
+<v Alex>It posted two sharp observations about the mood across the tech industry right now.
+
+293
+00:39:03.947 --> 00:39:10.861
+<v Maya>The first post had a striking title: "Everyone sees opportunities and nobody is optimistic."
+
+294
+00:39:11.354 --> 00:39:17.736
+<v Alex>Why would everyone see massive opportunities and still feel anxious and pessimistic?
+
+295
+00:39:18.369 --> 00:39:29.459
+<v Maya>The post said the biggest difference between the A I wave and the earlier internet wave is that A I started with a massive conflict of interest from day one.
+
+296
+00:39:29.459 --> 00:39:35.374
+<v Maya>Every company views the big foundation model labs as competitors that might eat their business alive.
+
+297
+00:39:35.374 --> 00:39:40.919
+<v Maya>So anxiety is much higher, defense is much fiercer, and there are no real allies.
+
+298
+00:39:41.537 --> 00:39:45.056
+<v Alex>And how did the post describe the opportunities people see?
+
+299
+00:39:45.528 --> 00:39:53.344
+<v Maya>In the old days, people talked about seeing one to three opportunities that might give a ten-X return.
+
+300
+00:39:53.344 --> 00:40:02.804
+<v Maya>Today, everyone sees fifty different opportunities that could be a thousand-X—except the probability of succeeding at any of them feels tiny!
+
+301
+00:40:02.804 --> 00:40:14.733
+<v Maya>And the second post said every tech lead right now is building similar things: automated pull-request approvals, coding automation, A I cost optimization, and model switching and evaluation.
+
+302
+00:40:15.404 --> 00:40:27.936
+<v Maya>也就是说：现在人人都看得到几十个看似能翻千倍的机会，但大家手头做的事其实高度同质化，所以普遍焦虑多于乐观。
+
+303
+00:40:28.482 --> 00:40:36.978
+<v Alex>Look at that contrast: everyone sees fifty shiny opportunities, and meanwhile everyone is building the exact same tooling.
+
+304
+00:40:36.978 --> 00:40:41.698
+<v Alex>How does a growth veteran like Fisher look at that?
+
+305
+00:40:42.267 --> 00:40:45.999
+<v Maya>In growth, having fifty ideas was never the bottleneck!
+
+306
+00:40:45.999 --> 00:40:48.487
+<v Maya>Tools are available to everyone now.
+
+307
+00:40:48.487 --> 00:40:59.684
+<v Maya>What separates winners from everyone else isn't spotting fifty opportunities—it's picking one single channel or direction and going all the way deep on it.
+
+308
+00:41:00.266 --> 00:41:07.848
+<v Alex>The daily notes say skip writing a standalone post here, and use a growth view to reply to staysaasy.
+
+309
+00:41:08.359 --> 00:41:17.783
+<v Maya>So the takeaway is: more opportunities do not mean more directions—pick one channel and go deep while everyone else chases fifty things.
+
+310
+00:41:19.126 --> 00:41:27.165
+<v Maya>一句话：机会多不等于方向多，找点子从来不难，难的是挑准一个渠道做透。
+
+311
+00:41:29.215 --> 00:41:38.661
+<v Alex>Story twelve is a short, sharp Chinese post from sujingshen in Guangzhou, who has six thousand four hundred ninety-two followers.
+
+312
+00:41:38.661 --> 00:41:43.159
+<v Alex>Yesterday we covered his product review of Tutti version two.
+
+313
+00:41:43.702 --> 00:41:52.923
+<v Maya>Today he replied to someone about those super annoying mobile app splash-screen ads—specifically the "shake your phone" feature on splash-screen ads.
+
+314
+00:41:53.499 --> 00:41:59.495
+<v Alex>Most phone users in China know these shake ads. What did sujingshen say is behind them?
+
+315
+00:42:00.072 --> 00:42:08.891
+<v Maya>He said behind almost every "shake-to-open" splash screen sits a hard advertising revenue K P I—Key Performance Indicator.
+
+316
+00:42:08.891 --> 00:42:17.710
+<v Maya>The moment management presses that revenue target down onto the team, user experience is always the first thing to give way.
+
+317
+00:42:18.297 --> 00:42:30.384
+<v Maya>简单说：开屏“摇一摇”这种招人烦的设计，背后都压着硬性的广告收入指标；指标一压下来，用户体验第一个让路。
+
+318
+00:42:30.846 --> 00:42:35.839
+<v Alex>Anyone who has worked in growth knows this trade-off inside and out.
+
+319
+00:42:35.839 --> 00:42:45.441
+<v Alex>When a company sets a short-term click or ad revenue metric as the ultimate target, teams will sacrifice user trust to hit the number.
+
+320
+00:42:45.973 --> 00:42:50.200
+<v Maya>The daily notes say no need to write a standalone post here.
+
+321
+00:42:50.200 --> 00:43:01.120
+<v Maya>Because we only do one Chinese reply a day and gave today's slot to vikingmute in Story eleven, sujingshen is listed as a backup in case Fisher prefers this topic.
+
+322
+00:43:01.723 --> 00:43:13.985
+<v Alex>So the takeaway is: teams always optimize for the metric you judge them on—if you want better user experience, change the K P I instead of blaming the designers.
+
+323
+00:43:15.011 --> 00:43:23.436
+<v Maya>一句话：考核指标定成什么样，团队就会牺牲什么，想改体验得先改考核口径。
+
+324
+00:43:25.486 --> 00:43:30.899
+<v Alex>And our final item in Segment three, story thirteen, is marked borderline.
+
+325
+00:43:30.899 --> 00:43:38.116
+<v Alex>It comes from Anthropic's official X account, which has about one point eight million followers.
+
+326
+00:43:38.712 --> 00:43:47.135
+<v Maya>Anthropic announced that it is committing five percent of its company shares to create the wholly owned Anthropic Public Benefit Fund.
+
+327
+00:43:47.135 --> 00:43:55.156
+<v Maya>For every fifty percent the company's valuation rises above a baseline, up to two percent more can be added.
+
+328
+00:43:55.156 --> 00:43:56.359
+<v Maya>The board decides.
+
+329
+00:43:56.832 --> 00:44:10.367
+<v Alex>They also said that when you combine this fund with the co-founders' pledge to donate eighty percent of their equity and employee donations, roughly twenty percent of Anthropic's shares go toward public benefit.
+
+330
+00:44:10.367 --> 00:44:19.647
+<v Alex>The post got eight thousand eight hundred twenty-five likes, and Elon Musk replied suggesting they just give the shares directly to the public.
+
+331
+00:44:20.280 --> 00:44:22.835
+<v Maya>Why is this marked borderline today?
+
+332
+00:44:23.445 --> 00:44:34.300
+<v Alex>Because while it's big industry news that might come up in casual conversation, it has very little to do with Fisher's own content direction or daily building.
+
+333
+00:44:34.300 --> 00:44:36.920
+<v Alex>So the daily notes say: skip it.
+
+334
+00:44:37.545 --> 00:44:44.852
+<v Maya>So the takeaway is: now you know the headline if someone brings it up, and we skip it for writing and replying.
+
+335
+00:44:46.106 --> 00:44:54.779
+<v Maya>一句话：这只是行业大新闻，跟你的内容方向无关，第 13 条擦边内容直接跳过。
+
+336
+00:44:56.829 --> 00:45:00.322
+<v Alex>Segment four. What Fisher could post and reply today.
+
+337
+00:45:00.955 --> 00:45:08.173
+<v Maya>Before we read the drafts, let's note how today's X pack was prepared at six thirty-four a.m.
+
+338
+00:45:08.173 --> 00:45:08.861
+<v Maya>Beijing time.
+
+339
+00:45:08.861 --> 00:45:16.079
+<v Maya>It reused today's Content Daily without making a second X A P I call, so it spent zero extra dollars.
+
+340
+00:45:16.539 --> 00:45:27.491
+<v Alex>Following the model routing rules from October sixteenth, the raw first draft was generated by Gemini four Argon, and then edited by the personal brand review pass.
+
+341
+00:45:27.491 --> 00:45:54.264
+<v Alex>That review pass stripped out exaggerated claims Argon tried to invent—like saying a tactic brings "steady traffic" or is "the most cited" or "a big advantage"—made sure we didn't repeat the "official source and verification date at the bottom of the page" line across three different drafts, and removed a line claiming "I write my own replies every day" since assistants draft them.
+
+342
+00:45:54.720 --> 00:45:58.292
+<v Maya>Let's read today's single original post draft.
+
+343
+00:45:58.292 --> 00:46:24.487
+<v Maya>It combines library item D R oh seven—A I only cites pages it dares to trust—with E V oh two—zero ad spend, where A I assistants are already one of the top traffic sources, stated without rankings or numbers—plus Fisher's week forty-two firsthand observation that the pages A I quotes are the ones where each section answers one small question.
+
+344
+00:46:24.941 --> 00:46:36.955
+<v Alex>It was sparked by Story one—Greg Isenberg's post on big companies blocking A I agents—but it doesn't name Greg or any specific company, so it stands on its own.
+
+345
+00:46:36.955 --> 00:46:40.596
+<v Alex>Here is the full original post draft, word for word:
+
+346
+00:46:41.096 --> 00:46:44.699
+<v Maya>"Some big companies are starting to block A I agents.
+
+347
+00:46:44.699 --> 00:46:50.103
+<v Maya>Either way, I think soon an agent will read your site before a person does.
+
+348
+00:46:50.103 --> 00:46:57.308
+<v Maya>I run a small site with no ads, and A I assistants are already one of the top traffic sources.
+
+349
+00:46:57.308 --> 00:46:59.470
+<v Maya>The pages they quote are simple.
+
+350
+00:46:59.470 --> 00:47:04.874
+<v Maya>Each section answers one small question, so the agent can take the answer without guessing.
+
+351
+00:47:04.874 --> 00:47:08.837
+<v Maya>Whether to block them or welcome them is a later question.
+
+352
+00:47:08.837 --> 00:47:13.881
+<v Maya>Making pages easy for an agent to read is something I can do today."
+
+353
+00:47:14.380 --> 00:47:31.356
+<v Alex>And if Fisher wants a shorter backup version, or wants to use it as a reply to Greg Isenberg instead of a standalone post, here is the short version: "Before deciding to block or welcome A I agents, make sure they can read your pages.
+
+354
+00:47:31.356 --> 00:47:38.524
+<v Alex>On my site, the pages A I assistants quote are the ones where each section answers one small question."
+
+355
+00:47:39.012 --> 00:47:55.639
+<v Maya>Remember: because the original post and Greg Isenberg's thread are about the exact same topic, pick one—if Fisher publishes the original post, skip replying to Greg; if he skips the original post, he can use the short version to reply to Greg.
+
+356
+00:47:56.202 --> 00:48:03.844
+<v Alex>Now let's highlight the two things marked with a warning sign in today's drafts that Fisher must confirm before pressing send.
+
+357
+00:48:04.301 --> 00:48:09.051
+<v Maya>Confirmation number one is in that original post draft we just read.
+
+358
+00:48:09.051 --> 00:48:23.697
+<v Maya>Look at the very first sentence: "Some big companies are starting to block A I agents." As we noted in Story one, that claim comes from Greg Isenberg's post and has not been verified by us.
+
+359
+00:48:24.265 --> 00:48:35.612
+<v Alex>If Fisher minds stating an unverified claim as fact, he should change that first sentence to start with an "if": "If big companies start blocking A I agents, ..."
+
+360
+00:48:36.096 --> 00:48:38.892
+<v Maya>And what is confirmation number two?
+
+361
+00:48:39.477 --> 00:48:52.547
+<v Alex>Confirmation number two is in reply draft number four, the Chinese reply to vikingmute, who has sixty-nine thousand followers, about letting Grok Bot take over S E O and push changes live.
+
+362
+00:48:52.547 --> 00:49:04.032
+<v Alex>Let's translate the meaning of the Chinese draft: "I'm happy to hand data observation and planning over to the bot too, it saves a lot of worry.
+
+363
+00:49:04.032 --> 00:49:10.369
+<v Alex>However, for the step of modifying live pages, I still keep a human check for myself.
+
+364
+00:49:10.369 --> 00:49:17.894
+<v Alex>Just like my writing assistants—they are only allowed to write drafts, and I have to click send myself.
+
+365
+00:49:17.894 --> 00:49:22.250
+<v Alex>Keeping the baseline action in my own hands feels more solid."
+
+366
+00:49:22.704 --> 00:49:25.158
+<v Maya>Why is there a warning sign on that reply?
+
+367
+00:49:25.671 --> 00:49:32.321
+<v Alex>Fisher needs to confirm that he actually keeps a human review step before modifying live website pages.
+
+368
+00:49:32.321 --> 00:49:47.185
+<v Alex>If he doesn't have that step for live pages, he should delete that second sentence about modifying live pages and keep only the second half about his writing assistants only writing drafts while he presses send himself.
+
+369
+00:49:47.823 --> 00:49:54.468
+<v Maya>Now let's walk through all ten reply drafts in order of follower count, from largest to smallest.
+
+370
+00:49:55.026 --> 00:50:06.561
+<v Alex>Reply one is to Peter Yang, two hundred eighty-nine thousand followers, on the worsening reply-bot problem on X: "For me the best signal is a detail only you could know.
+
+371
+00:50:06.561 --> 00:50:16.293
+<v Alex>A bot can copy the tone, but it can't make up what you actually did this week." Notice it doesn't mention using assistants to draft.
+
+372
+00:50:16.905 --> 00:50:36.678
+<v Maya>Reply two is to E X M seven seven seven seven, one hundred fifty-three thousand followers, on testing new models on your own real work instead of benchmarks, using W M P six b, X oh seven, and the October sixteenth model routing test: "Same for me.
+
+373
+00:50:36.678 --> 00:50:43.681
+<v Maya>I split work by task, one model writes my drafts and another one reads X and searches.
+
+374
+00:50:43.681 --> 00:50:49.036
+<v Maya>The split came from testing them on real daily tasks, not from benchmarks."
+
+375
+00:50:49.618 --> 00:51:07.026
+<v Alex>Reply three is to Lily Ray, one hundred twenty-four thousand followers, on G P T six adding disclaimers about how to pick a vendor, using D R oh three: "If the answer starts teaching people how to pick a vendor, pages that are easy to check get an edge.
+
+376
+00:51:07.026 --> 00:51:12.597
+<v Alex>On my site every page ends with the official source and the date I checked it.
+
+377
+00:51:12.597 --> 00:51:16.427
+<v Alex>I think that helps the A I and the reader both."
+
+378
+00:51:16.999 --> 00:51:33.516
+<v Maya>Reply four is our daily Chinese reply to vikingmute, sixty-nine thousand followers, which we just covered in Confirmation two: agreeing on automated data observation, while keeping a human check on live changes and pressing send.
+
+379
+00:51:34.004 --> 00:51:41.790
+<v Alex>Reply five is to Brodie Clark, sixty-eight thousand followers, on e-commerce product feeds winning in A I search: "Agree.
+
+380
+00:51:41.790 --> 00:51:46.239
+<v Alex>Fixed fields are the easiest thing for A I to pick up.
+
+381
+00:51:46.239 --> 00:51:58.102
+<v Alex>I think non-ecommerce sites can ask the same question: which of my pages have the facts in the same place every time, so a machine can read them like a feed."
+
+382
+00:51:58.667 --> 00:52:13.724
+<v Maya>Reply six is to Prajwal Tomar, fifty-seven thousand followers, on the Claude Code team's review rules, using D R oh five and E V oh eight without touching code: "The rules part works outside code too.
+
+383
+00:52:13.724 --> 00:52:22.045
+<v Maya>When I have to correct my A I assistants on the same thing more than once, it becomes a written rule.
+
+384
+00:52:22.045 --> 00:52:27.592
+<v Maya>And anything that goes out in public, they only draft. I press send myself."
+
+385
+00:52:28.050 --> 00:52:46.452
+<v Alex>Reply seven is to Eric Siu, forty-six thousand followers, on his five bot templates showing where the bot stops and the human takes over, using E V oh eight and D R oh five: "Writing the handoff point into the template is the part I like.
+
+386
+00:52:46.452 --> 00:52:49.193
+<v Alex>With several bots, nobody remembers it otherwise.
+
+387
+00:52:49.193 --> 00:52:57.415
+<v Alex>Two of my rules came from mistakes: every file has one writer, and no reply from me is not a yes."
+
+388
+00:52:58.026 --> 00:53:11.566
+<v Maya>Reply eight is to DesignArena, twenty-five thousand followers, on every A I model having its own visual website style, using D R oh five and the "no A I tone" list: "Same with writing.
+
+389
+00:53:11.566 --> 00:53:13.887
+<v Maya>Each model has its favorite words.
+
+390
+00:53:13.887 --> 00:53:24.719
+<v Maya>I keep a list of phrases my writing assistant is not allowed to use, because once a reader can tell which model wrote it, they trust it less."
+
+391
+00:53:25.361 --> 00:53:40.254
+<v Alex>Reply nine is to Murat, twenty-three thousand followers, on borrowing proven methods from other industries, using W M P five b with a general growth example: "I see this a lot from the growth side.
+
+392
+00:53:40.254 --> 00:53:44.391
+<v Alex>Many old growth ideas work fine on A I products.
+
+393
+00:53:44.391 --> 00:53:50.183
+<v Alex>One simple example: let people get value first, and ask for the signup after."
+
+394
+00:53:50.804 --> 00:54:02.450
+<v Maya>And reply ten is to staysaasy, seventeen thousand followers, on everyone seeing fifty opportunities while nobody feels optimistic: "More opportunities doesn't mean more directions.
+
+395
+00:54:02.450 --> 00:54:08.041
+<v Maya>In my years in growth, finding ideas was never the hard part.
+
+396
+00:54:08.041 --> 00:54:12.233
+<v Maya>Picking one channel and going deep on it was."
+
+397
+00:54:12.794 --> 00:54:42.168
+<v Maya>今天的待办：发帖和回复前先确认两件事——第一，原创帖第一句“一些大公司开始拦 Agent”来自 Greg 的帖子且未核实，介意的话就改成“如果大公司开始拦 Agent”；第二，回第 4 条中文帖时，确认你对“改线上页面”确实留了真人把关这一步，没有的话就删掉那句，只讲写稿助手的规矩。
+
+398
+00:54:42.168 --> 00:54:45.921
+<v Maya>确认好之后，再由你自己动手发送。
+
+399
+00:54:46.438 --> 00:54:53.592
+<v Alex>So the takeaway is: check those two confirmation notes, pick the drafts you like best, and press send yourself.
+
+400
+00:54:54.554 --> 00:55:01.368
+<v Maya>一句话：核对好两处细节，挑最顺眼的草稿由你自己点发送。
+
+401
+00:55:03.418 --> 00:55:08.743
+<v Alex>That's it for today. Let's state clearly: nothing was posted or sent.
+
+402
+00:55:08.743 --> 00:55:15.210
+<v Alex>All of the posts and replies we talked about today are drafts, and Fisher sends them himself.
+
+403
+00:55:15.682 --> 00:55:21.240
+<v Maya>Also, this episode is audio only. It was not published to the podcast feed.
+
+404
+00:55:21.642 --> 00:55:22.810
+<v Alex>I'm Alex.
+
+405
+00:55:23.233 --> 00:55:24.533
+<v Maya>And I'm Maya.
+
+406
+00:55:25.046 --> 00:55:28.636
+<v Alex>Thanks for listening to The Daily Signal. See you tomorrow.
+
+407
+00:55:29.068 --> 00:55:30.020
+<v Maya>明天见。
+
